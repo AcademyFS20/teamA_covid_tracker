@@ -6,95 +6,121 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="./css/style" />
     <title>Covid tracker</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" /> 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
   </head>
 
   <body>
-
     <!--HEADER-->
     <header>
       <!--navbar div-->
-        <nav class="navbar">
-            <img class="navbar__logosante" src="assets/SVG/logo__sante-29.svg"/>
-            <a href="" class="navbar__accueil">Accueil</a>
-            <a href="" class="navbar__conseil">Conseil</a>
-            <button type="button" class="navbar__btnlang">ENG <i class="fas fa-globe"></i></button>
-        </nav>
+      <nav class="navbar">
+        <img class="navbar__logosante" src="assets/SVG/logo__sante-29.svg" />
+        <a href="index.html" class="navbar__accueil">Accueil</a>
+        <a href="pages/conseil/conseil.html" class="navbar__conseil">Conseil</a>
+        <button type="button" class="navbar__btnlang">
+          ENG <i class="fas fa-globe"></i>
+        </button>
+      </nav>
 
       <!--Second part in the header-->
-        <div class="info">
-            <p class="info__titre"><b>LA DERNIÈRE INFO MÉDICALE</b></p>
-            <p class="info__cons1">La prise d'anti-inflammatoires (ibuprofène, cortisone...) pourrait être un facteur d'aggression de l'infection. En cas de fièvre, prenez du paracétamol.
-            </p>
-            <p class="info__cons2">N'arrêtez pas votre traitement! Consultez votre médecin ou votre pharmacien.</p>
-
-        </div>
-
-
-
+      <div class="info">
+        <p class="info__titre"><b>LA DERNIÈRE INFO MÉDICALE</b></p>
+        <p class="info__cons1">
+          La prise d'anti-inflammatoires (ibuprofène, cortisone...) pourrait
+          être un facteur d'aggression de l'infection. En cas de fièvre, prenez
+          du paracétamol.
+        </p>
+        <p class="info__cons1">
+          N'arrêtez pas votre traitement! Consultez votre médecin ou votre
+          pharmacien.
+        </p>
+      </div>
     </header>
 
     <!--FOOTER-->
     <footer>
       <!--First div in Footer-->
-        <div class="recommandation">
-          <h2 class="recommandation__title">Recommandations Officielles</h2>
-          <div class="recommandation__list">
-            <ul>
-              <li>Si vous pensez être malade, évitez les endroits publics.</li>
-              <li>Ne rendez pas visite aux personnes fragiles.</li>
-              <li>Evitez de sortir de chez vous.</li>
-              <li>Respectez les mesures barrière (lavage de main, masque).</li>
-              <li>Surveillez vos symptômes, l'évolution de votre température corporelle et cherchez un avis médical.</li>
-            </ul>
-
-          </div>
-          <div class="recommandation__contact">
-            <p class="recommandation__contact__appel">Appel Gratuit</p>
-            <button type="button" class="recommandation__contact__btn">080 100 47 47</button>
-            <a href="https://www.sante.gov.ma" class="recommandation__contact__link">www.sante.gov.ma</a>
-
-
-          </div>
-            
-
+      <div class="recommandation">
+        <h2 class="recommandation__title">Recommandations Officielles</h2>
+        <div class="recommandation__list">
+          <ul>
+            <li>
+              <span class="recommandation__list--color"
+                >Si vous pensez être malade,</span
+              >
+              évitez les endroits publics.
+            </li>
+            <li>Ne rendez pas visite aux personnes fragiles.</li>
+            <li>Evitez de sortir de chez vous.</li>
+            <li>Respectez les mesures barrière (lavage de main, masque).</li>
+            <li>
+              Surveillez vos symptômes, l'évolution de votre température
+              corporelle et cherchez un avis médical.
+            </li>
+          </ul>
         </div>
+        <div class="recommandation__contact">
+          <p>Appel Gratuit</p>
+          <button type="button" class="recommandation__contact__btn">
+            080 100 47 47
+          </button>
+          <a
+            href="https://www.sante.gov.ma"
+            class="recommandation__contact__link"
+            >www.sante.gov.ma</a
+          >
+        </div>
+      </div>
 
       <!--Second div in Footer-->
 
-        <div class="test">
-          <p class="test__ques">Vous pensez avoir été exposé au Coronavirus COVID-19 et avez des symptômes?</p>
-          <img src="Assets/SVG/1f637.svg" class="test__img"/>
-          <button type="button" class="test__btn">Demarrer le test</button>
-
-        </div>
+      <div class="test">
+        <p class="test__ques">
+          Vous pensez avoir été exposé au Coronavirus COVID-19 et avez des
+          symptômes?
+        </p>
+        <img src="Assets/SVG/1f637.svg" class="test__img" />
+        <button type="button" class="test__btn" id="btntest">
+          Demarrer le test
+        </button>
+      </div>
 
       <!--Third div in Footer-->
 
-        <div class="contacts">
-          <img src="assets/SVG/logo__sante-29.svg" class="contacts__img"/>
-          <div class="contacts__clicks">
-            <button type="button" class="contacts__clicks__btn">FRAN <i class="fas fa-globe"></i></button>
-            <a href="" class="contacts__clicks__acc">Accueil</a>
-            <a href="" class="contacts__clicks__cons">Conseil</a>
-          </div>
-
-          <div class="contacts__phone">
-            <p class="contacts__phone__cont">Contacts utiles</p>
-            <p class="contacts__phone__eco">Chiffre économique "Allo épidémie vigilance"</p>
-            <a href="tel:080-100-47-47" class="contacts__phone__num1">080 100 47 47</a>
-            <p class="contacts__phone__urg">Aide médicale urgente</p>
-            <a href="tel:144" class="contacts__phone__num2">114</a>
-
-          </div>
-          <div class="contacts__notice">
-            <p>Algorithme d'orientation mis à jour sur les recommandations en vigueur au 22/03/2020 à 16h15. Ce site d'information n'est pas un dispositif médical, il ne délivre pas d'avis médical. Projet solidaire d'urgence, financé par l'Alliance Digitale contre le COVID-19: @maladiecovid19</p>
-
-          </div>
-
+      <div class="contacts">
+        <img src="assets/SVG/logo__sante-29.svg" class="contacts__img" />
+        <div class="contacts__clicks">
+          <button type="button" class="contacts__clicks__btn">
+            FRAN <i class="fas fa-globe"></i>
+          </button>
+          <a href="index.html" class="contacts__clicks__acc">Accueil</a>
+          <a href="pages/conseil/conseil.html" class="contacts__clicks__cons">Conseil</a>
         </div>
 
-
+        <div class="contacts__phone">
+          <p class="contacts__phone__cont">Contacts utiles</p>
+          <p class="contacts__phone__eco">
+            Chiffre économique "Allo épidémie vigilance"
+          </p>
+          <a href="tel:080-100-47-47" class="contacts__phone__num1"
+            >080 100 47 47</a
+          >
+          <p class="contacts__phone__urg">Aide médicale urgente</p>
+          <a href="tel:144" class="contacts__phone__num2">114</a>
+        </div>
+        <div class="contacts__notice">
+          <p>
+            Algorithme d'orientation mis à jour sur les recommandations en
+            vigueur au 22/03/2020 à 16h15. Ce site d'information n'est pas un
+            dispositif médical, il ne délivre pas d'avis médical. Projet
+            solidaire d'urgence, financé par l'Alliance Digitale contre le
+            COVID-19: @maladiecovid19
+          </p>
+        </div>
+      </div>
     </footer>
 
     <script src="js/script.js"></script>
