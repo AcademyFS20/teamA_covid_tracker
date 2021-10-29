@@ -317,3 +317,32 @@ h4 {
   .contacts__notice {
     color: #858585; }
 
+    .navbar {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      background: url(../assets/SVG/bar-1.svg);
+      font-size: 18px;
+      font-weight: bold; }
+      .navbar__page {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 21px;
+        padding-right: 20px; }
+      .navbar__conseil {
+        color: #1078ad;
+        text-decoration: none; }
+      .navbar__accueil {
+        color: #1078ad;
+        text-decoration: none; }
+      .navbar__btnlang {
+        width: 100px;
+        color: #1078ad;
+        font-weight: bold;
+        background-color: transparent;
+        border-radius: 5px;
+        border-color: #1078ad;
+        height: 30px; }
+        .navbar__btnlang--icon {
+          color: #f4cf1b; }
