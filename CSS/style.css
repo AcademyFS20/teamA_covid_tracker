@@ -42,13 +42,14 @@ main {
     .testpara__text__paratitle {
       color: #1a519e; }
     .testpara__text__btntest {
-      height: 48px;
-      width: 528px;
-      background-color: #1a519e;
+      height: 55px;
+      width: 377px;
+      background-color: #1078ad;
       color: white;
       font-size: 28px;
       border: none;
-      border-radius: 6px; }
+      border-radius: 6px;
+      font-weight: bold; }
 
 .symptomes {
   display: flex;
