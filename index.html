@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="./css/style" />
+    <link rel="stylesheet" type="text/css" href="./CSS/style.css" />
     <title>Covid tracker</title>
     <link
       rel="stylesheet"
@@ -18,11 +18,13 @@
       <!--navbar div-->
       <nav class="navbar">
         <img class="navbar__logosante" src="assets/SVG/logo__sante-29.svg" />
-        <a href="index.html" class="navbar__accueil">Accueil</a>
-        <a href="pages/conseil.html" class="navbar__conseil">Conseil</a>
-        <button type="button" class="navbar__btnlang">
-          ENG <i class="fas fa-globe"></i>
-        </button>
+        <div class="navbar__page">
+          <a href="pages/conseil.html" class="navbar__conseil">Conseil</a>
+          <a href="index.html" class="navbar__accueil">Accueil</a>
+          <button type="button" class="navbar__btnlang">
+            ENG <i class="fas fa-globe navbar__btnlang--icon"></i>
+          </button>
+        </div>
       </nav>
 
       <!--Second part in the header-->
@@ -45,33 +47,35 @@
       <!--First div in Footer-->
       <div class="recommandation">
         <h2 class="recommandation__title">Recommandations Officielles</h2>
-        <div class="recommandation__list">
-          <ul>
-            <li>
-              <span class="recommandation__list--color"
-                >Si vous pensez être malade,</span
-              >
-              évitez les endroits publics.
-            </li>
-            <li>Ne rendez pas visite aux personnes fragiles.</li>
-            <li>Evitez de sortir de chez vous.</li>
-            <li>Respectez les mesures barrière (lavage de main, masque).</li>
-            <li>
-              Surveillez vos symptômes, l'évolution de votre température
-              corporelle et cherchez un avis médical.
-            </li>
-          </ul>
-        </div>
-        <div class="recommandation__contact">
-          <p>Appel Gratuit</p>
-          <button type="button" class="recommandation__contact__btn">
-            <a href="tel:080-100-47-47"> 080 100 47 47 </a>
-          </button>
-          <a
-            href="https://www.sante.gov.ma"
-            class="recommandation__contact__link"
-            >www.sante.gov.ma</a
-          >
+        <div class="recommandation__container">
+          <div class="recommandation__list">
+            <ul>
+              <li>
+                <span class="recommandation__list--color"
+                  >Si vous pensez être malade,</span
+                >
+                évitez les endroits publics.
+              </li>
+              <li>Ne rendez pas visite aux personnes fragiles.</li>
+              <li>Evitez de sortir de chez vous.</li>
+              <li>Respectez les mesures barrière (lavage de main, masque).</li>
+              <li>
+                Surveillez vos symptômes, l'évolution de votre température
+                corporelle et cherchez un avis médical.
+              </li>
+            </ul>
+          </div>
+          <div class="recommandation__contact">
+            <p class="recommandation__call">Appel Gratuit</p>
+            <button type="button" class="recommandation__btnn">
+              <a href="tel:080-100-47-47"> 080 100 47 47 </a>
+            </button>
+            <a
+              href="https://www.sante.gov.ma"
+              class="recommandation__link"
+              >www.sante.gov.ma</a
+            >
+          </div>
         </div>
       </div>
 
@@ -91,36 +95,38 @@
       <!--Third div in Footer-->
 
       <div class="contacts">
-        <img src="assets/SVG/logo__sante-29.svg" class="contacts__img" />
-        <div class="contacts__clicks">
-          <button type="button" class="contacts__clicks__btn">
-            FRAN <i class="fas fa-globe"></i>
-          </button>
-          <a href="index.html" class="contacts__clicks__acc">Accueil</a>
-          <a href="pages/conseil/conseil.html" class="contacts__clicks__cons"
-            >Conseil</a
-          >
-        </div>
+        <div class="contacts__imgsante"><img src="assets/SVG/logo__sante-29.svg" /></div>
+        <div class="contacts__info">
+          <div class="contacts__clicks">
+            <button type="button" class="contacts__btn">
+              FRAN <i class="fas fa-globe contacts__btn--icon"></i>
+            </button>
+            <a href="index.html" class="contacts__acc">Accueil</a>
+            <a href="pages/conseil/conseil.html" class="contacts__cons"
+              >Conseil</a
+            >
+          </div>
 
-        <div class="contacts__phone">
-          <p class="contacts__phone__cont">Contacts utiles</p>
-          <p class="contacts__phone__eco">
-            Chiffre économique "Allo épidémie vigilance"
-          </p>
-          <a href="tel:080-100-47-47" class="contacts__phone__num1"
-            >080 100 47 47</a
-          >
-          <p class="contacts__phone__urg">Aide médicale urgente</p>
-          <a href="tel:144" class="contacts__phone__num2">114</a>
-        </div>
-        <div class="contacts__notice">
-          <p>
-            Algorithme d'orientation mis à jour sur les recommandations en
-            vigueur au 22/03/2020 à 16h15. Ce site d'information n'est pas un
-            dispositif médical, il ne délivre pas d'avis médical. Projet
-            solidaire d'urgence, financé par l'Alliance Digitale contre le
-            COVID-19: @maladiecovid19
-          </p>
+          <div class="contacts__phone">
+            <p class="contacts__cont">Contacts utiles</p>
+            <p class="contacts__eco">
+              Chiffre économique "Allo épidémie vigilance"
+            </p>
+            <a href="tel:080-100-47-47" class="contacts__num1"
+              >080 100 47 47</a
+            >
+            <p class="contacts__urg">Aide médicale urgente</p>
+            <a href="tel:144" class="contacts__num2">114</a>
+          </div>
+          <div class="contacts__notice">
+            <p>
+              Algorithme d'orientation mis à jour sur les recommandations en
+              vigueur au 22/03/2020 à 16h15. Ce site d'information n'est pas un
+              dispositif médical, il ne délivre pas d'avis médical. Projet
+              solidaire d'urgence, financé par l'Alliance Digitale contre le
+              COVID-19: @maladiecovid19
+            </p>
+          </div>
         </div>
       </div>
     </footer>
