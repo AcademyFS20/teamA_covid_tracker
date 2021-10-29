@@ -167,24 +167,15 @@ h4 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 55px; }
-    .testpara__imgaccueil {
-      width: 60%;
-      height: 80%; }
-    .testpara__text {
-      text-align: center; }
-      .testpara__text__paratitle {
-        color: #1a519e; }
-      .testpara__text__btntest {
-        height: 48px;
-        width: 528px;
-        background-color: #1a519e;
-        color: white;
-        font-size: 28px;
-        border: none;
-        border-radius: 6px; }
-  .symptomes {
+    align-content: space-around;
+    font-size: 1.3rem;
+     }
+  .recommandation ul {
+    color: white;
+    list-style-type: none; }
+  .recommandation__list--color {
+    color: black; }
+  .recommandation__contact {
     display: flex;
     flex-direction: column;
     align-items: center;
