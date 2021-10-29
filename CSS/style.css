@@ -1,0 +1,150 @@
+/* colors */
+/* font family */
+/* font-sizes */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,600;1,700;1,800;1,900&display=swap");
+html {
+  font-family: "Montserrat", sans-serif; }
+
+body {
+  width: 90%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 34px; }
+
+h2 {
+  font-size: 2rem; }
+
+p {
+  font-size: 18px; }
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 89px; }
+
+.testpara {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 144px; }
+  .testpara__imgaccueil {
+    width: 60%;
+    height: 80%; }
+  .testpara__text {
+    text-align: center; }
+    .testpara__text__paratitle {
+      color: #1a519e; }
+    .testpara__text__btntest {
+      height: 48px;
+      width: 528px;
+      background-color: #1a519e;
+      color: white;
+      font-size: 28px;
+      border: none;
+      border-radius: 6px; }
+
+.symptomes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 89px; }
+  .symptomes__title {
+    color: #1a519e; }
+  .symptomes__all {
+    display: grid;
+    grid-template-columns: repeat(2, 24%);
+    grid-template-rows: repeat(2, 24%);
+    justify-content: center;
+    gap: 144px 233px;
+    font-weight: 700; }
+    .symptomes__all__fievre {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+    .symptomes__all__nausee {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+    .symptomes__all__gene {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+    .symptomes__all__toux {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+
+@media screen and (max-width: 721px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 55px; }
+  .testpara {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 55px; }
+    .testpara__imgaccueil {
+      width: 60%;
+      height: 80%; }
+    .testpara__text {
+      text-align: center; }
+      .testpara__text__paratitle {
+        color: #1a519e; }
+      .testpara__text__btntest {
+        height: 48px;
+        width: 528px;
+        background-color: #1a519e;
+        color: white;
+        font-size: 28px;
+        border: none;
+        border-radius: 6px; }
+  .symptomes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 55px; }
+    .symptomes__title {
+      color: #1a519e; }
+    .symptomes__all {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 55px; }
+      .symptomes__all__fievre {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+      .symptomes__all__nausee {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+      .symptomes__all__gene {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+      .symptomes__all__toux {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; } }
