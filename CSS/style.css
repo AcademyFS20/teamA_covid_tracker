@@ -257,83 +257,178 @@ h4 {
   border-style: none;
   border-radius: 13px; }
  
-  .contacts__info {
+
+  .navbar {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
+    background: url(../assets/SVG/bar-1.svg);
+    font-size: 18px;
+    font-weight: bold; }
+    .navbar__page {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 21px;
+      padding-right: 20px; }
+    .navbar__conseil {
+      color: #1078ad;
+      text-decoration: none; }
+    .navbar__accueil {
+      color: #1078ad;
+      text-decoration: none; }
+    .navbar__btnlang {
+      width: 100px;
+      color: #1078ad;
+      font-weight: bold;
+      background-color: transparent;
+      border-radius: 5px;
+      border-color: #1078ad;
+      height: 30px; }
+      .navbar__btnlang--icon {
+        color: #f4cf1b; }
+  
+  .info {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    align-content: space-between;
-    gap: 34px; }
-  .contacts__clicks {
+    justify-content: center;
+    background: url(/assets/SVG/Enchiffres-8.svg);
+    font-size: 18px;
+    font-weight: bold; }
+    .info__titre {
+      color: black; }
+    .info__cons1 {
+      color: #1078ad;
+      align-items: center; }
+  
+  .recommandation {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-weight: bold;
-    padding: 20px;
-    margin-left: 50px;
-    gap: 21px; }
-  .contacts__btn {
-    width: 100px;
-    color: #1078ad;
-    font-weight: bold;
-    background-color: transparent;
-    border-radius: 5px;
-    border-color: #1078ad;
-    height: 30px; }
-    .contacts__btn--icon {
-      color: #f4cf1b; }
-  .contacts__acc {
-    color: #1078ad;
-    text-decoration: none; }
-  .contacts__cons {
-    color: #1078ad;
-    text-decoration: none; }
-  .contacts__phone {
-    justify-content: center;
-    font-weight: bold;
-    margin-left: 50px;
-    width: 900px; }
-  .contacts__eco {
-    color: black; }
-  .contacts__num1 {
-    color: #3b9f58;
-    text-decoration: none; }
-  .contacts__urg {
-    color: black; }
-  .contacts__num2 {
-    color: #3b9f58;
-    text-decoration: none; }
-  .contacts__phone {
-    color: #1078ad; }
-  .contacts__notice {
-    color: #858585; }
-
-    .navbar {
+    align-items: center;
+    background: url(/assets/SVG/Enchiffres-30.svg); }
+    .recommandation h2 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: #91c0d9; }
+    .recommandation__container {
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
-      background: url(../assets/SVG/bar-1.svg);
-      font-size: 18px;
-      font-weight: bold; }
-      .navbar__page {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 21px;
-        padding-right: 20px; }
-      .navbar__conseil {
+      flex-wrap: nowrap;
+      align-items: center;
+      align-content: space-around;
+      font-size: 1.3rem;
+       }
+    .recommandation ul {
+      color: white;
+      list-style-type: none; }
+    .recommandation__list--color {
+      color: black; }
+    .recommandation__contact {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 34px;
+      gap: 13px; }
+    .recommandation__call {
+      color: #f4cf1b;
+      font-weight: bold;
+      font-size: 1.3rem; }
+    .recommandation__btnn {
+      background-color: #f4cf1b;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 24px;
+      border-radius: 5px;
+      height: 50px;
+      border: none; }
+      .recommandation__btnn a {
         color: #1078ad;
         text-decoration: none; }
-      .navbar__accueil {
-        color: #1078ad;
-        text-decoration: none; }
-      .navbar__btnlang {
-        width: 100px;
-        color: #1078ad;
-        font-weight: bold;
-        background-color: transparent;
-        border-radius: 5px;
-        border-color: #1078ad;
-        height: 30px; }
-        .navbar__btnlang--icon {
-          color: #f4cf1b; }
+    .recommandation__link {
+      color: white;
+      text-decoration: #f4cf1b underline;
+      font-size: 1.3rem; }
+  
+  .test {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+    background: url(/assets/SVG/bar-6.svg); }
+    .test p {
+      color: #1078ad;
+      margin-top: 10px;
+      font-size: 1.3rem; }
+    .test__btn {
+      color: white;
+      background-color: #1078ad;
+      font-size: 1.5rem;
+      font-weight: bold;
+      width: 377px;
+      height: 55px;
+      text-decoration: none;
+      border-radius: 13px;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      border: none; }
+  
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    gap: 55px; }
+    .contacts__info {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      align-content: space-between;
+      gap: 34px; }
+    .contacts__clicks {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font-weight: bold;
+      padding: 20px;
+      margin-left: 50px;
+      gap: 21px; }
+    .contacts__btn {
+      width: 100px;
+      color: #1078ad;
+      font-weight: bold;
+      background-color: transparent;
+      border-radius: 5px;
+      border-color: #1078ad;
+      height: 30px; }
+      .contacts__btn--icon {
+        color: #f4cf1b; }
+    .contacts__acc {
+      color: #1078ad;
+      text-decoration: none; }
+    .contacts__cons {
+      color: #1078ad;
+      text-decoration: none; }
+    .contacts__phone {
+      justify-content: center;
+      font-weight: bold;
+      margin-left: 50px;
+      width: 900px; }
+    .contacts__eco {
+      color: black; }
+    .contacts__num1 {
+      color: #3b9f58;
+      text-decoration: none; }
+    .contacts__urg {
+      color: black; }
+    .contacts__num2 {
+      color: #3b9f58;
+      text-decoration: none; }
+    .contacts__phone {
+      color: #1078ad; }
+   
