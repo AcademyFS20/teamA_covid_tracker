@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,600;1,700;1,800;1,900&display=swap");
+html {
+  font-family: "Montserrat", sans-serif; }
+
+body {
+  width: 90%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 34px; }
+
+h2 {
+  font-size: 2rem; }
+
+p {
+  font-size: 18px; }
+
+#titre {
+  color: #1a519e;
+  font-size: 30px;
+  display: flex;
+  justify-content: center; }
+
+.first {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 600;
+  gap: 55px; }
+  .first__sec1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 55px;
+    grid-row-gap: 34px;
+    align-items: center; }
+  .first__cons1 {
+    color: #1a519e;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 13px; }
+    .first__cons1--house {
+      grid-area: 3/2/4/3;
+      color: #1a519e;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+
+.second {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 144px;
+  font-weight: 500;
+  background-color: #d0e5f0; }
+  .second__btn {
+    display: flex;
+    color: white;
+    background-color: #1078ad;
+    width: auto;
+    height: 55px;
+    font-size: 18px;
+    border-style: none;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block; }
+  .second__sec2 {
+    color: #1a519e;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+h4 {
+  font-size: 1.5rem; }
+
+.symptomes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 89px;
+  color: #1a519e; }
+  .symptomes__title {
+    color: #1a519e; }
+  .symptomes__all {
+    display: grid;
+    grid-template-columns: repeat(2, 24%);
+    grid-template-rows: repeat(2, 24%);
+    justify-content: center;
+    gap: 144px 233px;
+    font-weight: 700; }
+    .symptomes__all__fievre {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+    .symptomes__all__nausee {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+    .symptomes__all__gene {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+    .symptomes__all__toux {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+
+.trans {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 55px; }
+
+.trans__method {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 144px; }
+
+#link {
+  text-decoration: none; }
+
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 34px; }
+  .page__title {
+    color: #1a519e; }
+  .page__msg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px; }
+
+.image-big {
+  width: 700px; }
+
+.logo-sante {
+  width: "10px"; }
+
+.bttn {
+  color: white;
+  background-color: #1078ad;
+  width: 377px;
+  height: 55px;
+  font-size: 30px;
+  border-style: none;
+  border-radius: 13px; }
