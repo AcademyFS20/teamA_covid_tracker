@@ -69,10 +69,10 @@ main {
   gap: 55px; }
   .first__sec1 {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 55px;
-    grid-row-gap: 34px;
+    grid-template-columns: repeat(3, 20%);
+    grid-template-rows: repeat(3, 20%);
+    grid-column-gap: 233px;
+    grid-row-gap: 89px;
     align-items: center; }
   .first__cons1 {
     color: #1a519e;
@@ -81,7 +81,8 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 13px; }
+    gap: 13px;
+    text-align: center; }
     .first__cons1--house {
       grid-area: 3/2/4/3;
       color: #1a519e;
@@ -96,7 +97,8 @@ main {
   align-items: center;
   gap: 144px;
   font-weight: 500;
-  background-color: #d0e5f0; }
+  background-color: #d0e5f0;
+  width: 100%; }
   .second__btn {
     display: flex;
     color: white;
@@ -123,7 +125,8 @@ h4 {
   flex-direction: column;
   align-items: center;
   gap: 89px;
-  color: black; }
+  color: black;
+  text-align: center; }
 
   .symptomes__title {
     color: #1a519e; }
@@ -225,7 +228,8 @@ h4 {
   gap: 144px;
   color: #1a519e;
   font-size: 18px;
-  font-weight: 600; }
+  font-weight: 600;
+  text-align: center; }
 
 #link {
   text-decoration: none; }
