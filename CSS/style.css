@@ -47,25 +47,39 @@ main {
     height: 80%; }
   .testpara__text {
     text-align: center; }
-    .testpara__text__paratitle {
-      color: #1a519e; }
-    .testpara__text__btntest {
-      height: 55px;
-      width: 377px;
-      background-color: #1078ad;
-      color: white;
-      font-size: 1.3rem;
-      border: none;
-      border-radius: 6px;
-      font-weight: bold; }
+  .info__para {
+    display: flex;
+    flex-direction: column;
+    gap: 8px; }
 
-#titre {
-  color: #1a519e;
-  font-size: 30px;
-  display: flex;
-  justify-content: center; }
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    font-size: 0.8rem; }
+    .navbar__btnlang {
+      width: 70px;
+      height: 30px;
+      font-size: 0.8rem; }
+  .info {
+    font-size: 0.8rem; }
+    .info p {
+      margin-left: 10px;
+      margin-right: 10px; } }
 
-.first {
+@media screen and (min-width: 425px) and (max-width: 768px) {
+  .navbar {
+    font-size: 0.8rem; }
+    .navbar__btnlang {
+      width: 70px;
+      height: 30px;
+      font-size: 10px; }
+  .info {
+    font-size: 0.8rem; }
+    .info p {
+      font-size: 0.8rem; } }
+
+.recommandation {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -263,244 +277,152 @@ h4 {
     gap: 8px;
     width: 100%;
     justify-content: center;
-    background-color: #f4cf1b;
-    font-size: 18px;
-    font-weight: bold; }
-    .info__titre {
-      color: black; }
-    .info__cons1 {
-      color: #1078ad;
-      text-align: center; }
-    .infoinfo__para {
-      display: flex;
-      flex-direction: column;
-      gap: 8px; 
-    }
-  
-  .recommandation {
-    gap: 55px;
+    font-weight: bold;
     text-align: center; }
-    .testpara__imgaccueil {
-      width: 60%;
-      height: 80%; }
-    .testpara__text {
-      text-align: center; }
-      .testpara__text__paratitle {
-        color: #1a519e;
-        text-align: center; }
-      .testpara__text__btntest {
-        height: 34px;
-        width: 233px;
-        background-color: #1a519e;
-        color: white;
-        font-size: 1.3rem;
-        border: none;
-        border-radius: 6px; }
-  .symptomes {
+  .contacts__eco {
+    color: black; }
+  .contacts__num1 {
+    color: #3b9f58;
+    text-decoration: none; }
+  .contacts__urg {
+    color: black; }
+  .contacts__num2 {
+    color: #3b9f58;
+    text-decoration: none; }
+  .contacts__phone {
+    color: #1078ad; }
+  .contacts__notice {
+    color: #858585;
+    width: 610px; }}
+
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  .info p {
+    font-size: 0.8rem; }
+  .recommandation {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     width: 100%;
-    background-color: #1078ad; }
-    .recommandation h2 {
-    gap: 34px; }
-    .symptomes__title {
-      color: #1a519e;
-      text-align: center; }
-    .symptomes__all {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      color: #91c0d9; }
+    font-size: 0.8rem; }
     .recommandation__container {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       align-items: center;
+      gap: 0px;
+      margin: auto;
+      text-align: center; }
+    .recommandation h2 {
       font-size: 1.3rem;
-      gap: 377px; }
+      text-align: center; }
     .recommandation ul {
-      color: white;
-      list-style-type: none; }
-    .recommandation__list--color {
-      color: black; }
-    .recommandation__contact {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-bottom: 34px;
-      gap: 13px; }
+      margin-right: 25px;
+      font-size: 0.8rem; }
     .recommandation__call {
-      color: #f4cf1b;
-      font-weight: bold;
-      font-size: 1.3rem; }
+      font-size: 0.8rem; }
     .recommandation__btnn {
-      background-color: #f4cf1b;
-      font-weight: bold;
-      text-decoration: none;
-      font-size: 24px;
+      font-size: 0.8rem;
       border-radius: 5px;
-      height: 50px;
-      border: none; }
-      .recommandation__btnn a {
-        color: #1078ad;
-        text-decoration: none; }
-    .recommandation__link {
-      color: white;
-      text-decoration: #f4cf1b underline;
-      font-size: 1.3rem; }
-  
-  .test {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #d0e5f0;
-    height: auto;
-    gap: 13px;
-    width: 100%; }
-    .test p {
-      color: #1078ad;
-      margin-top: 10px;
-      font-size: 1.3rem; }
-    .test__btn {
-      color: white;
-      background-color: #1078ad;
-      font-size: 1.5rem;
-      font-weight: bold;
-      width: 377px;
-      height: 55px;
-      text-decoration: none;
-      border-radius: 13px;
-      margin-top: 20px;
-      margin-bottom: 10px;
-      border: none; }
-  
-  .contacts {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 18px;
-    gap: 34px;
-    width: 100%; }
-    .contacts__info {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      align-content: space-between;
-      gap: 89px; }
-    .contacts__clicks {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      font-weight: bold;
-      padding: 20px;
-      gap: 21px; }
-    .contacts__btn {
-      width: 100px;
-      color: #1078ad;
-      font-weight: bold;
-      background-color: transparent;
-      border-radius: 5px;
-      border-color: #1078ad;
       height: 30px; }
-      .contacts__btn--icon {
-        color: #f4cf1b; }
-    .contacts__acc {
-      color: #1078ad;
-      text-decoration: none; }
-    .contacts__cons {
-      color: #1078ad;
-      text-decoration: none; }
-    .contacts__phone {
-      justify-content: center;
-      font-weight: bold; }
-    .contacts__eco {
-      color: black; }
-    .contacts__num1 {
-      color: #3b9f58;
-      text-decoration: none; }
-    .contacts__urg {
-      color: black; }
-    .contacts__num2 {
-      color: #3b9f58;
-      text-decoration: none; }
-    .contacts__phone {
-      color: #1078ad; }
-    .contacts__notice {
-      color: #858585;
-      width: 610px; }
-   
-}
+      .recommandation__btnn a {
+        font-size: 0.8rem; }
+    .recommandation__link {
+      font-size: 0.8rem; }
+  .test p {
+    text-align: center;
+    font-size: 0.8rem; }
+  .test__btn {
+    width: 150px;
+    height: 40px;
+    text-decoration: none;
+    font-size: 0.8rem; }
+  .test__img {
+    width: 50px; }
+  .contacts__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    gap: 0px;
+    font-size: 0.8rem;
+    width: 70%; }
+  .contacts__phone {
+    width: 110px; }
+  .contacts p {
+    font-size: 0.8rem; }
+  .contacts__notice {
+    text-align: flex-start;
+    width: 250px; }
+  .contacts__btn {
+    width: 70px;
+    height: 30px;
+    font-size: 0.8rem; } }
 
 @media screen and (min-width: 425px) and (max-width: 768px) {
-  main {
+  .recommandation {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 55px;
-    font-size: 0.8rem; }
-  .testpara {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 55px;
-    text-align: center; }
-    .testpara__imgaccueil {
-      width: 60%;
-      height: 80%; }
-    .testpara__text {
-      text-align: center; }
-      .testpara__text__paratitle {
-        color: #1a519e;
-        text-align: center; }
-      .testpara__text__btntest {
-        height: 55px;
-        width: 377px;
-        background-color: #1a519e;
-        color: white;
-        font-size: 1.3rem;
-        border: none;
-        border-radius: 6px; }
-  .symptomes {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 55px; }
-    .symptomes__title {
-      color: #1a519e;
-      text-align: center; }
-    .symptomes__all {
-      display: grid;
-      grid-template-columns: repeat(2, 24%);
-      grid-template-rows: repeat(2, 24%);
-      justify-content: center;
-      gap: 144px 233px;
-      font-weight: 700;
-      text-align: center; }
-      .symptomes__all__fievre {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center; }
-      .symptomes__all__nausee {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center; }
-      .symptomes__all__gene {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center; }
-      .symptomes__all__toux {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center; }
-}
+    margin-right: 0px;
+    font-size: 200px;
+    /*&__list{
+                margin-left: 200px;
+            }
+            ul{
+                display: flex;
+                //margin-right: 300px;
+                font-size: $font-size--n5;
+                width: 50%;
 
+            
+            }*/ }
+    .recommandation h2 {
+      font-size: 0.8rem;
+      text-align: center; }
+    .recommandation__container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 13px;
+      justify-content: center;
+      align-content: center;
+      font-size: 0.8rem;
+      text-align: center; }
+    .recommandation__call {
+      font-size: 0.8rem; }
+    .recommandation__btnn {
+      font-size: 0.8rem;
+      border-radius: 5px;
+      height: 30px; }
+      .recommandation__btnn a {
+        font-size: 0.8rem; }
+    .recommandation__link {
+      font-size: 0.8rem; }
+  .test p {
+    text-align: center;
+    font-size: 0.8rem; }
+  .test__btn {
+    width: 120px;
+    height: 30px;
+    text-decoration: none;
+    font-size: 0.8rem; }
+  .test__img {
+    width: 40px; }
+  .contacts__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    gap: 0px;
+    font-size: 0.8rem;
+    width: 70%; }
+  .contacts__phone {
+    width: 110px; }
+  .contacts p {
+    font-size: 0.8rem; }
+  .contacts__notice {
+    text-align: flex-start;
+    width: 250px; }
+  .contacts__btn {
+    width: 70px;
+    height: 30px;
+    font-size: 0.8rem; } }
