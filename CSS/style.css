@@ -235,194 +235,169 @@ h4 {
   font-size: 30px;
   border-style: none;
   border-radius: 13px; }
- 
-  .navbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background: url(../assets/SVG/bar-1.svg);
-    font-size: 18px;
-    font-weight: bold;
-    width: 100%; }
-    .navbar__page {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      gap: 21px;
-      padding-right: 20px; }
-    .navbar__conseil {
-      color: #1078ad;
-      text-decoration: none; }
-    .navbar__accueil {
-      color: #1078ad;
-      text-decoration: none; }
-    .navbar__btnlang {
-      width: 100px;
-      color: #1078ad;
-      font-weight: bold;
-      background-color: transparent;
-      border-radius: 5px;
-      border-color: #1078ad;
-      height: 30px; }
-      .navbar__btnlang--icon {
-      color: #f4cf1b; }
-  
-  .info {
-    gap: 55px;
-    font-size: 0.8rem; }
-  .testpara {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
-    width: 100%;
-    justify-content: center;
-    font-weight: bold;
-    text-align: center; }
-  .contacts__eco {
-    color: black; }
-  .contacts__num1 {
-    color: #3b9f58;
-    text-decoration: none; }
-  .contacts__urg {
-    color: black; }
-  .contacts__num2 {
-    color: #3b9f58;
-    text-decoration: none; }
-  .contacts__phone {
-    color: #1078ad; }
-  .contacts__notice {
-    color: #858585;
-    width: 610px; }}
 
 @media screen and (min-width: 320px) and (max-width: 425px) {
-  .info p {
-    font-size: 0.8rem; }
-  .recommandation {
+  #titre {
+    font-size: 30px;
     display: flex;
+    justify-content: center;
+    text-align: center; }
+  .first {
+    display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    font-size: 0.8rem; }
-    .recommandation__container {
+    font-weight: 50px;
+    gap: 13px; }
+    .first__sec1 {
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 0px;
-      margin: auto;
       text-align: center; }
-    .recommandation h2 {
-      font-size: 1.3rem;
+  .second {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+    font-weight: 50px;
+    background-color: #d0e5f0; }
+    .second__sec2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       text-align: center; }
-    .recommandation ul {
-      margin-right: 25px;
-      font-size: 0.8rem; }
-    .recommandation__call {
-      font-size: 0.8rem; }
-    .recommandation__btnn {
-      font-size: 0.8rem;
-      border-radius: 5px;
-      height: 30px; }
-      .recommandation__btnn a {
-        font-size: 0.8rem; }
-    .recommandation__link {
-      font-size: 0.8rem; }
-  .test p {
-    text-align: center;
-    font-size: 0.8rem; }
-  .test__btn {
-    width: 150px;
-    height: 40px;
-    text-decoration: none;
-    font-size: 0.8rem; }
-  .test__img {
-    width: 50px; }
-  .contacts__info {
+  __btn {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 55px;
+    font-size: 18px; }
+  .symptomes {
     display: flex;
     flex-direction: column;
     align-items: center;
-    align-content: center;
-    gap: 0px;
-    font-size: 0.8rem;
-    width: 70%; }
-  .contacts__phone {
-    width: 110px; }
-  .contacts p {
-    font-size: 0.8rem; }
-  .contacts__notice {
-    text-align: flex-start;
-    width: 250px; }
-  .contacts__btn {
-    width: 70px;
-    height: 30px;
-    font-size: 0.8rem; } }
+    justify-content: center;
+    gap: 34px;
+    text-align: center; }
+    .symptomes__all {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 34px;
+      font-weight: 700; }
+  .trans {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 55px; }
+  .trans__method {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 39px;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center; } }
 
 @media screen and (min-width: 425px) and (max-width: 768px) {
-  .recommandation {
+  #titre {
+    font-size: 30px;
     display: flex;
+    justify-content: center;
+    text-align: center; }
+  .first {
+    display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin-right: 0px;
-    font-size: 200px;
-    /*&__list{
-                margin-left: 200px;
-            }
-            ul{
-                display: flex;
-                //margin-right: 300px;
-                font-size: $font-size--n5;
-                width: 50%;
-
-            
-            }*/ }
-    .recommandation h2 {
-      font-size: 0.8rem;
+    font-weight: 50px;
+    gap: 13px; }
+    .first__sec1 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      grid-column-gap: 15px;
+      grid-row-gap: 17px;
+      align-items: center;
       text-align: center; }
-    .recommandation__container {
+    .first--position {
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 13px;
-      justify-content: center;
-      align-content: center;
-      font-size: 0.8rem;
+      position: sticky;
+      left: 55%; }
+  .second {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+    font-weight: 50px;
+    background-color: #d0e5f0; }
+    .second__sec2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       text-align: center; }
-    .recommandation__call {
-      font-size: 0.8rem; }
-    .recommandation__btnn {
-      font-size: 0.8rem;
-      border-radius: 5px;
-      height: 30px; }
-      .recommandation__btnn a {
-        font-size: 0.8rem; }
-    .recommandation__link {
-      font-size: 0.8rem; }
-  .test p {
-    text-align: center;
-    font-size: 0.8rem; }
-  .test__btn {
-    width: 120px;
-    height: 30px;
-    text-decoration: none;
-    font-size: 0.8rem; }
-  .test__img {
-    width: 40px; }
-  .contacts__info {
+  __btn {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 55px;
+    font-size: 18px; }
+  .symptomes {
     display: flex;
     flex-direction: column;
     align-items: center;
-    align-content: center;
-    gap: 0px;
-    font-size: 0.8rem;
-    width: 70%; }
-  .contacts__phone {
-    width: 110px; }
-  .contacts p {
-    font-size: 0.8rem; }
-  .contacts__notice {
-    text-align: flex-start;
-    width: 250px; }
-  .contacts__btn {
-    width: 70px;
-    height: 30px;
-    font-size: 0.8rem; } }
+    justify-content: center;
+    gap: 89px;
+    color: black;
+    text-align: center; }
+    .symptomes__title {
+      color: #1a519e; }
+    .symptomes__all {
+      display: grid;
+      grid-template-columns: repeat(2, 24%);
+      grid-template-rows: repeat(2, 24%);
+      justify-content: center;
+      gap: 144px 233px;
+      font-weight: 700; }
+      .symptomes__all__fievre {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+      .symptomes__all__nausee {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+      .symptomes__all__gene {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+      .symptomes__all__toux {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+  .trans {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 55px; }
+  .trans__method {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 144px;
+    color: #1a519e;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center; } }
