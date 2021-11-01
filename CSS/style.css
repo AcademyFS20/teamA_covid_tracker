@@ -110,7 +110,8 @@ main {
       text-align: center; }
       .testpara__text__paratitle {
         color: #1a519e;
-        text-align: center; }
+        text-align: center;
+        font-size: 1.6rem; }
       .testpara__text__btntest {
         height: 34px;
         width: 233px;
@@ -127,7 +128,8 @@ main {
     gap: 34px; }
     .symptomes__title {
       color: #1a519e;
-      text-align: center; }
+      text-align: center;
+      font-size: 1.6rem; }
     .symptomes__all {
       display: flex;
       flex-direction: column;
@@ -195,13 +197,14 @@ main {
     gap: 55px; }
     .symptomes__title {
       color: #1a519e;
-      text-align: center; }
+      text-align: center;
+      padding: 13px; }
     .symptomes__all {
       display: grid;
       grid-template-columns: repeat(2, 24%);
       grid-template-rows: repeat(2, 24%);
       justify-content: center;
-      gap: 144px 233px;
+      gap: 144px 144px;
       font-weight: 700;
       text-align: center; }
       .symptomes__all__fievre {
