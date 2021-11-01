@@ -46,7 +46,7 @@ main {
       width: 377px;
       background-color: #1078ad;
       color: white;
-      font-size: 28px;
+      font-size: 1.3rem;
       border: none;
       border-radius: 6px;
       font-weight: bold; }
@@ -113,10 +113,10 @@ main {
         text-align: center; }
       .testpara__text__btntest {
         height: 34px;
-        width: 377px;
+        width: 233px;
         background-color: #1a519e;
         color: white;
-        font-size: 28px;
+        font-size: 1.3rem;
         border: none;
         border-radius: 6px; }
   .symptomes {
@@ -134,6 +134,75 @@ main {
       align-items: center;
       justify-content: center;
       gap: 34px;
+      text-align: center; }
+      .symptomes__all__fievre {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+      .symptomes__all__nausee {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+      .symptomes__all__gene {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+      .symptomes__all__toux {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; } }
+
+@media screen and (min-width: 425px) and (max-width: 768px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 55px;
+    font-size: 0.8rem; }
+  .testpara {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 55px;
+    text-align: center; }
+    .testpara__imgaccueil {
+      width: 60%;
+      height: 80%; }
+    .testpara__text {
+      text-align: center; }
+      .testpara__text__paratitle {
+        color: #1a519e;
+        text-align: center; }
+      .testpara__text__btntest {
+        height: 55px;
+        width: 377px;
+        background-color: #1a519e;
+        color: white;
+        font-size: 1.3rem;
+        border: none;
+        border-radius: 6px; }
+  .symptomes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 55px; }
+    .symptomes__title {
+      color: #1a519e;
+      text-align: center; }
+    .symptomes__all {
+      display: grid;
+      grid-template-columns: repeat(2, 24%);
+      grid-template-rows: repeat(2, 24%);
+      justify-content: center;
+      gap: 144px 233px;
+      font-weight: 700;
       text-align: center; }
       .symptomes__all__fievre {
         display: flex;
