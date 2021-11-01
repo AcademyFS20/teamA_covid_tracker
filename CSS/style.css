@@ -263,6 +263,7 @@ p {
     .recommandation h2 {
       font-size: 1.3rem;
       text-align: center; }
+<<<<<<< HEAD
     .recommandation ul {
       margin-right: 0px;
       font-size: 0.8rem; }
@@ -292,6 +293,31 @@ p {
     align-items: center;
     justify-content: center; }
     .contacts__info {
+=======
+      .testpara__text__paratitle {
+        color: #1a519e;
+        text-align: center;
+        font-size: 1.6rem; }
+      .testpara__text__btntest {
+        height: 34px;
+        width: 233px;
+        background-color: #1a519e;
+        color: white;
+        font-size: 1.3rem;
+        border: none;
+        border-radius: 6px; }
+  .symptomes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 34px; }
+    .symptomes__title {
+      color: #1a519e;
+      text-align: center;
+      font-size: 1.6rem; }
+    .symptomes__all {
+>>>>>>> brahim
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -410,6 +436,7 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
+<<<<<<< HEAD
     align-items: center;
     gap: 89px; }
     .page__title {
@@ -420,3 +447,38 @@ p {
     font-size: 1.5rem; }
   .logo-sante {
     width: "21px"; } }
+=======
+    gap: 55px; }
+    .symptomes__title {
+      color: #1a519e;
+      text-align: center;
+      padding: 13px; }
+    .symptomes__all {
+      display: grid;
+      grid-template-columns: repeat(2, 24%);
+      grid-template-rows: repeat(2, 24%);
+      justify-content: center;
+      gap: 144px 144px;
+      font-weight: 700;
+      text-align: center; }
+      .symptomes__all__fievre {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+      .symptomes__all__nausee {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+      .symptomes__all__gene {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+      .symptomes__all__toux {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; } }
+>>>>>>> brahim
