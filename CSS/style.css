@@ -94,6 +94,18 @@ p {
       margin-left: 10px;
       margin-right: 10px; } }
 
+@media screen and (min-width: 425px) and (max-width: 768px) {
+  .navbar {
+    font-size: 0.8rem; }
+    .navbar__btnlang {
+      width: 70px;
+      height: 30px;
+      font-size: 10px; }
+  .info {
+    font-size: 0.8rem; }
+    .info p {
+      font-size: 0.8rem; } }
+
 .recommandation {
   display: flex;
   flex-direction: column;
@@ -288,44 +300,72 @@ p {
     height: 30px;
     font-size: 0.8rem; } }
 
-@media screen and (min-width: 425px) and (max-width: 1023) {
+@media screen and (min-width: 425px) and (max-width: 768px) {
   .recommandation {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     margin-right: 0px;
-    font-size: 200px; }
+    font-size: 200px;
+    /*&__list{
+                margin-left: 200px;
+            }
+            ul{
+                display: flex;
+                //margin-right: 300px;
+                font-size: $font-size--n5;
+                width: 50%;
+
+            
+            }*/ }
     .recommandation h2 {
       font-size: 0.8rem;
       text-align: center; }
     .recommandation__container {
-      display: none;
-      align-items: center;
-      font-size: 0.8rem;
-      gap: 0px; }
-    .recommandation__list {
-      margin-left: 200px; }
-    .recommandation ul {
       display: flex;
-      font-size: 0.8rem;
-      width: 50%; }
-  .contacts {
-    display: flex;
-    flex-direction: column; }
-    .contacts__info {
-      display: none;
       flex-direction: column;
-      gap: 0px;
+      align-items: center;
+      gap: 13px;
+      justify-content: center;
+      align-content: center;
       font-size: 0.8rem;
-      width: 50%; }
-    .contacts__phone {
-      width: 50px; }
-    .contacts p {
+      text-align: center; }
+    .recommandation__call {
       font-size: 0.8rem; }
-    .contacts__notice {
-      text-align: flex-start;
-      width: 250px; }
-    .contacts__btn {
-      width: 70px;
-      height: 30px;
-      font-size: 0.8rem; } }
+    .recommandation__btnn {
+      font-size: 0.8rem;
+      border-radius: 5px;
+      height: 30px; }
+      .recommandation__btnn a {
+        font-size: 0.8rem; }
+    .recommandation__link {
+      font-size: 0.8rem; }
+  .test p {
+    text-align: center;
+    font-size: 0.8rem; }
+  .test__btn {
+    width: 120px;
+    height: 30px;
+    text-decoration: none;
+    font-size: 0.8rem; }
+  .test__img {
+    width: 40px; }
+  .contacts__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    gap: 0px;
+    font-size: 0.8rem;
+    width: 70%; }
+  .contacts__phone {
+    width: 110px; }
+  .contacts p {
+    font-size: 0.8rem; }
+  .contacts__notice {
+    text-align: flex-start;
+    width: 250px; }
+  .contacts__btn {
+    width: 70px;
+    height: 30px;
+    font-size: 0.8rem; } }
