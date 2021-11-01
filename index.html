@@ -13,9 +13,7 @@
   </head>
 
   <body>
-    
     <header>
-      
       <nav class="navbar">
         <img class="navbar__logosante" src="assets/SVG/logo__sante-29.svg" />
         <div class="navbar__page">
@@ -27,25 +25,84 @@
         </div>
       </nav>
 
-      
       <div class="info">
         <p class="info__titre"><b>LA DERNIÈRE INFO MÉDICALE</b></p>
         <div class="info__para">
           <p class="info__cons1">
             La prise d'anti-inflammatoires (ibuprofène, cortisone...) pourrait
-            être un facteur
-            d'aggression de l'infection. En cas de fièvre, prenez
-            du paracétamol.
-            N'arrêtez pas votre traitement! Consultez votre médecin ou votre
-            pharmacien.
+            être un facteur d'aggression de l'infection. En cas de fièvre,
+            prenez du paracétamol. N'arrêtez pas votre traitement! Consultez
+            votre médecin ou votre pharmacien.
           </p>
-      </div>
+        </div>
       </div>
     </header>
+    <main>
+      <section class="testpara">
+        <img
+          class="testpara__imgaccueil"
+          src="./assets/SVG/image-accueil.svg"
+          alt="image des docteurs"
+        />
 
-   
+        <div class="testpara__text">
+          <h2 class="testpara__text__paratitle">
+            Vous pensez avor été exposé au Coronavirus COVID-19 et avez des
+            symptômes ?
+          </h2>
+          <img src="./assets/SVG/1f637.svg" alt="emoticon of a sick person" />
+          <div class="testpara__text__smallpara">
+            <p>je reste vigilant?</p>
+            <p>Je programme une téléconsultation?</p>
+            <p>j'appelle le 15?</p>
+            <p>
+              Faites le test pour répondre en citoyen éclairé selon vos
+              symptômes.
+            </p>
+          </div>
+          <button type="button" class="testpara__text__btntest" id="btntest">
+            Demarer le test
+          </button>
+        </div>
+      </section>
+      <section class="symptomes">
+        <h2 class="symptomes__title">
+          Quels sont les symptômes à surveiller ?
+        </h2>
+        <div class="symptomes__all">
+          <div class="syptomes__all__fievre">
+            <img
+              src="./assets/SVG/thermometre.png"
+              alt="image d'un trémométre"
+            />
+            <p>Fiévre</p>
+          </div>
+          <div class="syptomes__all__nausee">
+            <img
+              src="./assets/SVG/Calque 2.svg"
+              alt="image d'une persone qui vomit"
+            />
+            <p>Nauséés et vomissements</p>
+          </div>
+          <div class="symptomes__all__gene">
+            <img
+              src="./assets/svg/Calque -2.svg"
+              alt="image d'une persone stressé qui y a ses main sur sa poitirine"
+            />
+            <p>Gêne respiratoire</p>
+          </div>
+          <div class="symptomes__all__toux">
+            <img
+              src="./assets/svg/Calque -1.svg"
+              alt="image d'une persone qui tousee"
+            />
+            <p>Toux et maux de gorge</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
     <footer>
-    
       <div class="recommandation">
         <h2 class="recommandation__title">Recommandations Officielles</h2>
         <div class="recommandation__container">
@@ -63,9 +120,7 @@
               <li>
                 Surveillez vos symptômes, l'évolution de votre température
               </li>
-              <li>
-                corporelle et cherchez un avis médical.
-              </li>
+              <li>corporelle et cherchez un avis médical.</li>
             </ul>
           </div>
           <div class="recommandation__contact">
@@ -73,16 +128,12 @@
             <button type="button" class="recommandation__btnn">
               <a href="tel:080-100-47-47"> 080 100 47 47 </a>
             </button>
-            <a
-              href="https://www.sante.gov.ma"
-              class="recommandation__link"
+            <a href="https://www.sante.gov.ma" class="recommandation__link"
               >www.sante.gov.ma</a
             >
           </div>
         </div>
       </div>
-
-      
 
       <div class="test">
         <p class="test__ques">
@@ -95,46 +146,48 @@
         </button>
       </div>
 
-      
-
       <div class="contacts">
-        <div class="contacts__imgsante"><img src="assets/SVG/logo__sante-29.svg" /></div>
+        <div class="contacts__imgsante">
+          <img src="assets/SVG/logo__sante-29.svg" />
+        </div>
         <div class="contacts__info">
-
           <div class="contacts__foot">
-              <div class="contacts__clicks">
-                <button type="button" class="contacts__btn">
-                  FRAN <i class="fas fa-globe contacts__btn--icon"></i>
-                </button>
-                <a href="index.html" class="contacts__acc">Accueil</a>
-                <a href="pages/conseil/conseil.html" class="contacts__cons"
-                  >Conseil</a
-                >
+            <div class="contacts__clicks">
+              <button type="button" class="contacts__btn">
+                FRAN <i class="fas fa-globe contacts__btn--icon"></i>
+              </button>
+              <a href="index.html" class="contacts__acc">Accueil</a>
+              <a href="pages/conseil/conseil.html" class="contacts__cons"
+                >Conseil</a
+              >
             </div>
 
             <div class="contacts__phone">
-                <p class="contacts__cont">Contacts utiles</p>
-                <p class="contacts__eco">
-                  Chiffre économique "Allo épidémie vigilance"
-                </p>
-                <a href="tel:080-100-47-47" class="contacts__num1"
-                  >080 100 47 47</a
-                >
-                <p class="contacts__urg">Aide médicale urgente</p>
-                <a href="tel:144" class="contacts__num2">114</a>
+              <p class="contacts__cont">Contacts utiles</p>
+              <p class="contacts__eco">
+                Chiffre économique "Allo épidémie vigilance"
+              </p>
+              <a href="tel:080-100-47-47" class="contacts__num1"
+                >080 100 47 47</a
+              >
+              <p class="contacts__urg">Aide médicale urgente</p>
+              <a href="tel:144" class="contacts__num2">114</a>
             </div>
-
           </div>
-         
 
           <div class="contacts__notice">
             <p>
               Algorithme d'orientation mis à jour sur les recommandations en
-              vigueur au 22/03/2020 à 16h15.</p>
-              <p>Ce site d'information n'est pas un
-                dispositif médical, il ne délivre pas d'avis médical.</p>
-              <p>Projet solidaire d'urgence, financé par l'Alliance Digitale contre le
-                COVID-19: @maladiecovid19</p>
+              vigueur au 22/03/2020 à 16h15.
+            </p>
+            <p>
+              Ce site d'information n'est pas un dispositif médical, il ne
+              délivre pas d'avis médical.
+            </p>
+            <p>
+              Projet solidaire d'urgence, financé par l'Alliance Digitale contre
+              le COVID-19: @maladiecovid19
+            </p>
           </div>
         </div>
       </div>

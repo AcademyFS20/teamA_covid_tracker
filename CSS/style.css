@@ -263,7 +263,6 @@ p {
     .recommandation h2 {
       font-size: 1.3rem;
       text-align: center; }
-<<<<<<< HEAD
     .recommandation ul {
       margin-right: 0px;
       font-size: 0.8rem; }
@@ -293,31 +292,6 @@ p {
     align-items: center;
     justify-content: center; }
     .contacts__info {
-=======
-      .testpara__text__paratitle {
-        color: #1a519e;
-        text-align: center;
-        font-size: 1.6rem; }
-      .testpara__text__btntest {
-        height: 34px;
-        width: 233px;
-        background-color: #1a519e;
-        color: white;
-        font-size: 1.3rem;
-        border: none;
-        border-radius: 6px; }
-  .symptomes {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 34px; }
-    .symptomes__title {
-      color: #1a519e;
-      text-align: center;
-      font-size: 1.6rem; }
-    .symptomes__all {
->>>>>>> brahim
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -392,7 +366,6 @@ p {
   .contacts__foot {
     display: flex;
     justify-content: center;
-<<<<<<< HEAD
     gap: 40%; }
   .contacts__phone {
     width: 110px; }
@@ -436,7 +409,6 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-<<<<<<< HEAD
     align-items: center;
     gap: 89px; }
     .page__title {
@@ -447,38 +419,567 @@ p {
     font-size: 1.5rem; }
   .logo-sante {
     width: "21px"; } }
-=======
-    gap: 55px; }
-    .symptomes__title {
-      color: #1a519e;
-      text-align: center;
-      padding: 13px; }
-    .symptomes__all {
-      display: grid;
-      grid-template-columns: repeat(2, 24%);
-      grid-template-rows: repeat(2, 24%);
+
+
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       justify-content: center;
-      gap: 144px 144px;
-      font-weight: 700;
-      text-align: center; }
-      .symptomes__all__fievre {
+      gap: 89px; }
+    
+    .testpara {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 144px; }
+      .testpara__imgaccueil {
+        width: 60%;
+        height: 80%; }
+      .testpara__text {
+        text-align: center; }
+        .testpara__text__paratitle {
+          color: #1a519e; }
+        .testpara__text__btntest {
+          height: 55px;
+          width: 377px;
+          background-color: #1078ad;
+          color: white;
+          font-size: 1.3rem;
+          border: none;
+          border-radius: 6px;
+          font-weight: bold; }
+    
+    .symptomes {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 89px; }
+      .symptomes__title {
+        color: #1a519e; }
+      .symptomes__all {
+        display: grid;
+        grid-template-columns: repeat(2, 24%);
+        grid-template-rows: repeat(2, 24%);
+        justify-content: center;
+        gap: 144px 233px;
+        font-weight: 700;
+        text-align: center; }
+        .symptomes__all__fievre {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center; }
+        .symptomes__all__nausee {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center; }
+        .symptomes__all__gene {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center; }
+        .symptomes__all__toux {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center; }
+    
+    @media screen and (min-width: 320px) and (max-width: 425px) {
+      main {
         display: flex;
         flex-direction: column;
+        align-items: center;
         justify-content: center;
-        align-items: center; }
-      .symptomes__all__nausee {
+        gap: 55px;
+        font-size: 0.8rem; }
+      .testpara {
         display: flex;
         flex-direction: column;
+        align-items: center;
         justify-content: center;
-        align-items: center; }
-      .symptomes__all__gene {
+        gap: 55px;
+        text-align: center; }
+        .testpara__imgaccueil {
+          width: 60%;
+          height: 80%; }
+        .testpara__text {
+          text-align: center; }
+          .testpara__text__paratitle {
+            color: #1a519e;
+            text-align: center;
+            font-size: 1.6rem; }
+          .testpara__text__btntest {
+            height: 34px;
+            width: 233px;
+            background-color: #1a519e;
+            color: white;
+            font-size: 1.3rem;
+            border: none;
+            border-radius: 6px; }
+      .symptomes {
         display: flex;
         flex-direction: column;
+        align-items: center;
         justify-content: center;
-        align-items: center; }
-      .symptomes__all__toux {
+        gap: 34px; }
+        .symptomes__title {
+          color: #1a519e;
+          text-align: center;
+          font-size: 1.6rem; }
+        .symptomes__all {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 34px;
+          text-align: center; }
+          .symptomes__all__fievre {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; }
+          .symptomes__all__nausee {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; }
+          .symptomes__all__gene {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; }
+          .symptomes__all__toux {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; } }
+    
+    @media screen and (min-width: 425px) and (max-width: 768px) {
+      main {
         display: flex;
         flex-direction: column;
+        align-items: center;
         justify-content: center;
-        align-items: center; } }
->>>>>>> brahim
+        gap: 55px;
+        font-size: 0.8rem; }
+      .testpara {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 55px;
+        text-align: center; }
+        .testpara__imgaccueil {
+          width: 60%;
+          height: 80%; }
+        .testpara__text {
+          text-align: center; }
+          .testpara__text__paratitle {
+            color: #1a519e;
+            text-align: center; }
+          .testpara__text__btntest {
+            height: 55px;
+            width: 377px;
+            background-color: #1a519e;
+            color: white;
+            font-size: 1.3rem;
+            border: none;
+            border-radius: 6px; }
+      .symptomes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 55px; }
+        .symptomes__title {
+          color: #1a519e;
+          text-align: center;
+          padding: 13px; }
+        .symptomes__all {
+          display: grid;
+          grid-template-columns: repeat(2, 24%);
+          grid-template-rows: repeat(2, 24%);
+          justify-content: center;
+          gap: 144px 144px;
+          font-weight: 700;
+          text-align: center; }
+          .symptomes__all__fievre {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; }
+          .symptomes__all__nausee {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; }
+          .symptomes__all__gene {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; }
+          .symptomes__all__toux {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; } }
+
+
+            #titre {
+              color: #1a519e;
+              font-size: 30px;
+              display: flex;
+              justify-content: center; }
+            
+            .first {
+              display: flex;
+              justify-content: center;
+              flex-direction: column;
+              align-items: center;
+              font-weight: 600;
+              gap: 55px; }
+              .first__sec1 {
+                display: grid;
+                grid-template-columns: repeat(3, 20%);
+                grid-template-rows: repeat(3, 20%);
+                grid-column-gap: 233px;
+                grid-row-gap: 89px;
+                align-items: center; }
+              .first__cons1 {
+                color: #1a519e;
+                font-size: 18px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 13px;
+                text-align: center; }
+                .first__cons1--house {
+                  grid-area: 3/2/4/3;
+                  color: #1a519e;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center; }
+            
+            .second {
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+              align-items: center;
+              gap: 144px;
+              font-weight: 500;
+              background-color: #d0e5f0;
+              width: 100%; }
+              .second__btn {
+                display: flex;
+                color: white;
+                background-color: #1078ad;
+                width: auto;
+                height: 55px;
+                font-size: 18px;
+                border-style: none;
+                border-radius: 5px;
+                text-decoration: none;
+                display: inline-block; }
+              .second__sec2 {
+                color: #1a519e;
+                display: flex;
+                flex-direction: column;
+                align-items: center; }
+            
+            h4 {
+              font-size: 1.5rem; }
+            
+            .symptomes {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              gap: 89px;
+              color: black;
+              text-align: center; }
+              .symptomes__title {
+                color: #1a519e; }
+              .symptomes__all {
+                display: grid;
+                grid-template-columns: repeat(2, 24%);
+                grid-template-rows: repeat(2, 24%);
+                justify-content: center;
+                gap: 144px 233px;
+                font-weight: 700; }
+                .symptomes__all__fievre {
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center; }
+                .symptomes__all__nausee {
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center; }
+                .symptomes__all__gene {
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center; }
+                .symptomes__all__toux {
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center; }
+            
+            .trans {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              gap: 55px; }
+            
+            .trans__method {
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+              align-items: center;
+              gap: 144px;
+              color: #1a519e;
+              font-size: 18px;
+              font-weight: 600;
+              text-align: center; }
+            
+            #link {
+              text-decoration: none; }
+            
+            .page {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              gap: 34px; }
+              .page__title {
+                color: #1a519e; }
+              .page__msg {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 8px; }
+            
+            .image-big {
+              width: 700px; }
+            
+            .logo-sante {
+              width: "10px"; }
+            
+            .bttn {
+              color: white;
+              background-color: #1078ad;
+              width: 377px;
+              height: 55px;
+              font-size: 30px;
+              border-style: none;
+              border-radius: 13px; }
+            
+            @media screen and (min-width: 320px) and (max-width: 425px) {
+              #titre {
+                font-size: 30px;
+                display: flex;
+                justify-content: center;
+                text-align: center; }
+              .first {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                font-weight: 50px;
+                gap: 13px; }
+                .first__sec1 {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  text-align: center; }
+              .second {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 13px;
+                font-weight: 50px;
+                background-color: #d0e5f0; }
+                .second__sec2 {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  text-align: center; }
+              __btn {
+                display: flex;
+                flex-direction: column;
+                width: auto;
+                height: 55px;
+                font-size: 18px; }
+              .symptomes {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 34px;
+                text-align: center; }
+                .symptomes__all {
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  gap: 34px;
+                  font-weight: 700; }
+              .trans {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 55px; }
+              .trans__method {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 39px;
+                font-size: 18px;
+                font-weight: 600;
+                text-align: center; } }
+            
+            @media screen and (min-width: 425px) and (max-width: 768px) {
+              #titre {
+                font-size: 30px;
+                display: flex;
+                justify-content: center;
+                text-align: center; }
+              .first {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                font-weight: 50px;
+                gap: 13px; }
+                .first__sec1 {
+                  display: grid;
+                  grid-template-columns: repeat(2, 1fr);
+                  grid-template-rows: repeat(3, 1fr);
+                  grid-column-gap: 15px;
+                  grid-row-gap: 17px;
+                  align-items: center;
+                  text-align: center; }
+                .first--position {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  position: sticky;
+                  left: 55%; }
+              .second {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 13px;
+                font-weight: 50px;
+                background-color: #d0e5f0; }
+                .second__sec2 {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  text-align: center; }
+              __btn {
+                display: flex;
+                flex-direction: column;
+                width: auto;
+                height: 55px;
+                font-size: 18px; }
+              .symptomes {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 89px;
+                color: black;
+                text-align: center; }
+                .symptomes__title {
+                  color: #1a519e; }
+                .symptomes__all {
+                  display: grid;
+                  grid-template-columns: repeat(2, 24%);
+                  grid-template-rows: repeat(2, 24%);
+                  justify-content: center;
+                  gap: 144px 233px;
+                  font-weight: 700; }
+                  .symptomes__all__fievre {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center; }
+                  .symptomes__all__nausee {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center; }
+                  .symptomes__all__gene {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center; }
+                  .symptomes__all__toux {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center; }
+              .trans {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 55px; }
+              .trans__method {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 144px;
+                color: #1a519e;
+                font-size: 18px;
+                font-weight: 600;
+                text-align: center; } }
+            
+            @media screen and (min-width: 320px) and (max-width: 425px) {
+              .image-big {
+                width: 230px;
+                height: 100px; }
+              .page__title {
+                font-size: 1.5rem;
+                text-align: center; }
+              .page__msg {
+                width: 50px; }
+              .bttn {
+                width: 233px;
+                height: 55px;
+                font-size: 1.3rem; }
+              .logo-sante {
+                width: "9px"; } }
+            
+            @media screen and (min-width: 425px) and (max-width: 768px) {
+              .image-big {
+                width: 460px;
+                height: 200px; }
+              .page {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 89px; }
+                .page__title {
+                  font: size 2rem; }
+              .bttn {
+                width: 233px;
+                height: 89px;
+                font-size: 1.5rem; }
+              .logo-sante {
+                width: "21px"; } }            
