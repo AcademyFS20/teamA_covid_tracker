@@ -1,0 +1,380 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,600;1,700;1,800;1,900&display=swap");
+html {
+  font-family: "Montserrat", sans-serif; }
+
+body {
+  width: 90%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 34px; }
+
+header {
+  display: flex;
+  flex-direction: column;
+  width: 100%; }
+
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column; }
+
+h2 {
+  font-size: 2rem; }
+
+p {
+  font-size: 18px; }
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: url(../assets/SVG/bar-1.svg);
+  font-size: 18px;
+  font-weight: bold;
+  width: 100%; }
+  .navbar__page {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 21px;
+    padding-right: 20px; }
+  .navbar__conseil {
+    color: #1078ad;
+    text-decoration: none; }
+  .navbar__accueil {
+    color: #1078ad;
+    text-decoration: none; }
+  .navbar__btnlang {
+    width: 100px;
+    color: #1078ad;
+    font-weight: bold;
+    background-color: transparent;
+    border-radius: 5px;
+    border-color: #1078ad;
+    height: 30px; }
+    .navbar__btnlang--icon {
+      color: #f4cf1b; }
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  justify-content: center;
+  background-color: #f4cf1b;
+  font-size: 18px;
+  font-weight: bold; }
+  .info__titre {
+    color: black; }
+  .info__cons1 {
+    color: #1078ad; }
+  .info__para {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+    width: 70%; }
+
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    font-size: 0.8rem; }
+    .navbar__btnlang {
+      width: 70px;
+      height: 30px;
+      font-size: 0.8rem; }
+  .info {
+    font-size: 0.8rem; }
+    .info p {
+      margin-left: 10px;
+      margin-right: 10px; } }
+
+@media screen and (min-width: 425px) and (max-width: 768px) {
+  .navbar {
+    font-size: 0.8rem; }
+    .navbar__btnlang {
+      width: 70px;
+      height: 30px;
+      font-size: 10px; }
+  .info {
+    font-size: 0.8rem; }
+    .info p {
+      font-size: 0.8rem; } }
+
+.recommandation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #1078ad; }
+  .recommandation h2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #91c0d9; }
+  .recommandation__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.3rem;
+    gap: 340px; }
+  .recommandation ul {
+    color: white;
+    list-style-type: none; }
+  .recommandation__list--color {
+    color: black; }
+  .recommandation__contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 34px;
+    gap: 13px; }
+  .recommandation__call {
+    color: #f4cf1b;
+    font-weight: bold;
+    font-size: 1.3rem; }
+  .recommandation__btnn {
+    background-color: #f4cf1b;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 24px;
+    border-radius: 5px;
+    height: 50px;
+    border: none; }
+    .recommandation__btnn a {
+      color: #1078ad;
+      text-decoration: none; }
+  .recommandation__link {
+    color: white;
+    text-decoration: #f4cf1b underline;
+    font-size: 1.3rem; }
+
+.test {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #d0e5f0;
+  height: auto;
+  gap: 13px;
+  width: 100%; }
+  .test p {
+    color: #1078ad;
+    margin-top: 10px;
+    font-size: 1.3rem; }
+  .test__btn {
+    color: white;
+    background-color: #1078ad;
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 377px;
+    height: 55px;
+    text-decoration: none;
+    border-radius: 13px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border: none; }
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  gap: 34px;
+  width: 100%; }
+  .contacts__foot {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .contacts__info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: space-between;
+    gap: 89px; }
+  .contacts__clicks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: bold;
+    padding: 20px;
+    gap: 21px; }
+  .contacts__btn {
+    width: 100px;
+    color: #1078ad;
+    font-weight: bold;
+    background-color: transparent;
+    border-radius: 5px;
+    border-color: #1078ad;
+    height: 30px; }
+    .contacts__btn--icon {
+      color: #f4cf1b; }
+  .contacts__acc {
+    color: #1078ad;
+    text-decoration: none; }
+  .contacts__cons {
+    color: #1078ad;
+    text-decoration: none; }
+  .contacts__phone {
+    justify-content: center;
+    font-weight: bold;
+    text-align: center; }
+  .contacts__eco {
+    color: black; }
+  .contacts__num1 {
+    color: #3b9f58;
+    text-decoration: none; }
+  .contacts__urg {
+    color: black; }
+  .contacts__num2 {
+    color: #3b9f58;
+    text-decoration: none; }
+  .contacts__phone {
+    color: #1078ad; }
+  .contacts__notice {
+    color: #858585;
+    width: 610px; }
+
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  .info p {
+    font-size: 0.8rem; }
+  .recommandation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    font-size: 0.8rem; }
+    .recommandation__container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0px;
+      margin: auto;
+      text-align: left; }
+    .recommandation h2 {
+      font-size: 1.3rem;
+      text-align: center; }
+    .recommandation ul {
+      margin-right: 0px;
+      font-size: 0.8rem; }
+    .recommandation__call {
+      font-size: 0.8rem; }
+    .recommandation__btnn {
+      font-size: 0.8rem;
+      border-radius: 5px;
+      height: 30px; }
+      .recommandation__btnn a {
+        font-size: 0.8rem; }
+    .recommandation__link {
+      font-size: 0.8rem; }
+  .test p {
+    text-align: center;
+    font-size: 0.8rem; }
+  .test__btn {
+    width: 150px;
+    height: 40px;
+    text-decoration: none;
+    font-size: 0.8rem; }
+  .test__img {
+    width: 50px; }
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .contacts__info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-content: center;
+      gap: 0px;
+      font-size: 0.8rem;
+      width: 70%; }
+    .contacts__foot {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40%; }
+    .contacts__phone {
+      width: 110px; }
+    .contacts p {
+      font-size: 0.8rem; }
+    .contacts__notice {
+      text-align: flex-start;
+      width: 250px; }
+    .contacts__btn {
+      width: 70px;
+      height: 30px;
+      font-size: 0.8rem; } }
+
+@media screen and (min-width: 425px) and (max-width: 768px) {
+  .recommandation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0px;
+    font-size: 200px; }
+    .recommandation h2 {
+      font-size: 0.8rem;
+      text-align: center; }
+    .recommandation__container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 13px;
+      justify-content: center;
+      align-content: center;
+      font-size: 0.8rem;
+      text-align: left; }
+    .recommandation__call {
+      font-size: 0.8rem; }
+    .recommandation__btnn {
+      font-size: 0.8rem;
+      border-radius: 5px;
+      height: 30px; }
+      .recommandation__btnn a {
+        font-size: 0.8rem; }
+    .recommandation__link {
+      font-size: 0.8rem; }
+  .test p {
+    text-align: center;
+    font-size: 0.8rem; }
+  .test__btn {
+    width: 120px;
+    height: 30px;
+    text-decoration: none;
+    font-size: 0.8rem; }
+  .test__img {
+    width: 40px; }
+  .contacts__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    gap: 0px;
+    font-size: 0.8rem;
+    width: 70%; }
+  .contacts__foot {
+    display: flex;
+    justify-content: center;
+    gap: 40%; }
+  .contacts__phone {
+    width: 110px; }
+  .contacts p {
+    font-size: 0.8rem; }
+  .contacts__notice {
+    text-align: flex-start;
+    width: 350px; }
+  .contacts__btn {
+    width: 70px;
+    height: 30px;
+    font-size: 0.8rem; } }
