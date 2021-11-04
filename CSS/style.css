@@ -257,12 +257,19 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  gap: 144px; }
 
 .paraText {
   display: flex;
   flex-direction: column;
   align-items: flex-start; }
+
+h3 {
+  text-align: center; }
+
+canvas {
+  margin: 34px 0 34px 0; }
 
 #apiPageFooter {
   width: 100%;
