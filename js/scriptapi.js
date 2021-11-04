@@ -8,6 +8,7 @@ const chartLines = document.querySelector("#chartCountries").getContext('2d');
 const chartBars = document.querySelector("#chartMorocco").getContext('2d');
 const doughnutLabel = document.querySelector('.doughnutLabel');
 const barLabel = document.querySelector(".barLabel");
+const barLines = document.querySelector(".barLines");
 
 
 
@@ -103,18 +104,26 @@ async function ShowDataWorld() {
     return item.lescas;
   });
 
+console.log(Date);
+  let options = { year: 'numeric', month: 'long', day: 'numeric' };
+  let date= Date.slice(0,10);
 
-  let options1 = { year: 'numeric', month: 'long', day: 'numeric' }
-  let date= Date
-  let today = date.toLocaleString('en-US', options1);
+  
 
-  doughnutLabel.textContent = `World Summary ${today}`;
+  console.log(data)
+ 
+    const today = date.toLocaleString('en-US',{day:'numeric'})
+
+    console.log(today)
+
+
+  doughnutLabel.textContent = `World Summary  ${today}`;
   const worldSummaryChart = new Chart(chartDoughnut, {
     type: 'doughnut',
     data: {
       labels: ["NewConfirmed", "NewDeaths", "NewRecovered", "TotalConfirmed", "TotalDeaths", "TotalRecovered"],
       datasets: [{
-        label: `World Summary ${today}`,
+        label: `World Summary ${Date}`,
         data: [NewConfirmed, NewDeaths, NewRecovered, TotalConfirmed, TotalDeaths, TotalRecovered],
         backgroundColor: [
           'rgba(255, 99, 132, 0.2)',
@@ -136,7 +145,8 @@ async function ShowDataWorld() {
       }]
     },
   });
-
+ 
+   barLines.textContent = `Countries${today}`;
   const chartCountries = new Chart(chartLines, {
     type: 'line',
     data: {
@@ -146,14 +156,16 @@ async function ShowDataWorld() {
             data: deaths,
             backgroundColor: "transparent",
             borderColor:"blue",
-            borderWidth: 4
+            borderWidth: 4,
+            yAxisID: 'y',
         },
         {
           label: "Total confirmed cases",
           data: confirmedCases,
           backgroundColor: "transparent",
           borderColor:"orange",
-          borderWidth: 4
+          borderWidth: 4,
+          yAxisID: 'y1',
       }]
     },
     options: {
@@ -164,8 +176,34 @@ async function ShowDataWorld() {
         },
         scales: {
             y: {
-                beginAtZero: true
-            }
+                // beginAtZero: true,
+                type: 'linear',
+                display: true,
+                position: 'left',
+                grid: {
+                  color: 'rgba(0,255,0,0.1)',
+                  borderColor: 'blue'
+                },
+                ticks: {
+                  beginAtZero: true,
+                  stepStepSize: 1000,
+                  }
+            },
+            y1: {
+              // beginAtZero: true,
+              type: 'linear',
+              display: true,
+              position: 'right',
+              grid: {
+                color: 'rgba(0,255,0,0.1)',
+                borderColor: 'orange'
+              },
+              ticks: {
+                beginAtZero: true,
+                stepSize: 100000,
+               }
+          }
+            
         }
     }
 });
@@ -249,7 +287,10 @@ let ArrayMorocco = promiseForApiMorocco.map((item) => {
   options: {
       scales: {
           y: {
-              beginAtZero: true
+            ticks: {
+              beginAtZero: true,
+              stepStepSize: 5000,
+              }
           }
       }
   }
