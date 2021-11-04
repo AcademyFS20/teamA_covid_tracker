@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css" />
+    <title>Questionnaire</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+</head>
+<body>
+    <header>
+      
+        <nav class="navbar">
+          <img class="navbar__logosante" src="../assets/SVG/logo__sante-29.svg" />
+          <div class="navbar__page">
+            <a href="../Pages/conseil.html" class="navbar__conseil">Conseil</a>
+            <a href="../index.html" class="navbar__accueil">Accueil</a>
+            <button type="button" class="navbar__btnlang">
+              ENG <i class="fas fa-globe navbar__btnlang--icon"></i>
+            </button>
+          </div>
+        </nav>
+    </header>
+    <main>
+
+      
+        <form class="questionnaire" id="questionnaires">
+          <div class="progressbar" id="progress">
+            <div class="progressbar__stepper">
+              <div class="progressbar__bullet">&bull;</div>
+              <p class="progressbar__title">Informations</p>
+            </div>
+            <div class="progressbar__stepper">
+              <div class="progressbar__bullet">&bull;</div>
+              <p class="progressbar__title">Test</p>
+            </div>
+            <div class="progressbar__stepper">
+              <div class="progressbar__bullet">&bull;</div>
+              <p class="progressbar__title">Résultats</p>
+            </div>
+          </div>
+          
+        <div class="information" id="shown">
+          <div class="information1" >
+            <h2 class="information__title">Introduction</h2>
+            <p class="information__info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque accusamus pariatur, nisi ut ipsam earum amet sunt optio cumque! Aliquid quae voluptas dicta inventore nobis. Corporis tenetur quae nihil magnam?</p>
+            <hr>
+            <p class="information__info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere quidem a, accusamus minima, cupiditate quasi perspiciatis repellat consequatur illo, qui praesentium optio. Veritatis cum, id at incidunt quo magni quam?</p>
+        </div>
+        <div class="buttons">
+            <button type="button" class="buttons__btns" id="btnquiz">Démarrer le test</button>
+        </div>
+      </div>
+
+
+
+
+
+          <div class="pagequestionnaire" id="hidden">
+            <div class="titletest"></div>
+            
+            <div class="questions">
+                <p class="questions__question"> </p>
+              <div class="questions__answers">  
+                <!--<div class="questions__answer">
+                    <input type="radio" class="questions__butn" value="answers" checked>
+                    <label for="button"> Oui</label>
+                </div>
+                <div class="questions__answer">
+                    <input type="radio" class="questions__butn" value="answers">
+                    <label for="button"> Non</label>
+                </div>-->
+              
+          
+          
+            </div>
+            <div class="buttons">
+                
+                <button type="button" class="buttons__btns1" id="prevbtn" >Question précédante</button>
+                <button type="button" class="buttons__btns2" id="nextbtn">Question suivante</button>
+              </div>
+
+            </div>
+          </div>
+
+
+             
+
+        </form>
+        
+
+    </main>
+    <footer>
+    
+        <div class="recommandation">
+          <h2 class="recommandation__title">Recommandations Officielles</h2>
+          <div class="recommandation__container">
+            <div class="recommandation__list">
+              <ul>
+                <li>
+                  <span class="recommandation__list--color"
+                    >Si vous pensez être malade,</span
+                  >
+                  évitez les endroits publics.
+                </li>
+                <li>Ne rendez pas visite aux personnes fragiles.</li>
+                <li>Evitez de sortir de chez vous.</li>
+                <li>Respectez les mesures barrière (lavage de main, masque).</li>
+                <li>
+                  Surveillez vos symptômes, l'évolution de votre température
+                </li>
+                <li>
+                  corporelle et cherchez un avis médical.
+                </li>
+              </ul>
+            </div>
+            <div class="recommandation__contact">
+              <p class="recommandation__call">Appel Gratuit</p>
+              <button type="button" class="recommandation__btnn">
+                <a href="tel:080-100-47-47"> 080 100 47 47 </a>
+              </button>
+              <a
+                href="https://www.sante.gov.ma"
+                class="recommandation__link"
+                >www.sante.gov.ma</a>
+            </div>
+          </div>
+        </div>
+        <div class="contacts">
+            <div class="contacts__imgsante"><img src="../assets/SVG/logo__sante-29.svg" /></div>
+            <div class="contacts__info">
+    
+              <div class="contacts__foot">
+                  <div class="contacts__clicks">
+                    <button type="button" class="contacts__btn">
+                      FRAN <i class="fas fa-globe contacts__btn--icon"></i>
+                    </button>
+                    <a href="../index.html" class="contacts__acc">Accueil</a>
+                    <a href="../Pages/conseil.html" class="contacts__cons"
+                      >Conseil</a>
+                </div>
+    
+                <div class="contacts__phone">
+                    <p class="contacts__cont">Contacts utiles</p>
+                    <p class="contacts__eco">
+                      Chiffre économique "Allo épidémie vigilance"
+                    </p>
+                    <a href="tel:080-100-47-47" class="contacts__num1"
+                      >080 100 47 47</a
+                    >
+                    <p class="contacts__urg">Aide médicale urgente</p>
+                    <a href="tel:144" class="contacts__num2">114</a>
+                </div>
+    
+              </div>
+             
+    
+              <div class="contacts__notice">
+                <p>
+                  Algorithme d'orientation mis à jour sur les recommandations en
+                  vigueur au 22/03/2020 à 16h15.</p>
+                  <p>Ce site d'information n'est pas un
+                    dispositif médical, il ne délivre pas d'avis médical.</p>
+                  <p>Projet solidaire d'urgence, financé par l'Alliance Digitale contre le
+                    COVID-19: @maladiecovid19</p>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <script src="../js/script.js"></script>
+</body>
+</html>
