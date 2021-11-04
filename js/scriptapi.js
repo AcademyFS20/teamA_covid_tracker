@@ -107,15 +107,8 @@ async function ShowDataWorld() {
 console.log(Date);
   let options = { year: 'numeric', month: 'long', day: 'numeric' };
   let date= Date.slice(0,10);
-
-  
-
-  console.log(data)
- 
-    const today = date.toLocaleString('en-US',{day:'numeric'})
-
-    console.log(today)
-
+  let today = date.toLocaleString('en-US', options);
+  console.log(today);
 
   doughnutLabel.textContent = `World Summary  ${today}`;
   const worldSummaryChart = new Chart(chartDoughnut, {
