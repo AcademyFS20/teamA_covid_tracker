@@ -48,6 +48,9 @@ p {
   .navbar__accueil {
     color: #1078ad;
     text-decoration: none; }
+  .navbar__tracker {
+    color: #1078ad;
+    text-decoration: none; }
   .navbar__btnlang {
     width: 100px;
     color: #1078ad;
@@ -228,6 +231,9 @@ p {
     color: #1078ad;
     text-decoration: none; }
   .contacts__cons {
+    color: #1078ad;
+    text-decoration: none; }
+  .contacts__tracker {
     color: #1078ad;
     text-decoration: none; }
   .contacts__phone {
@@ -501,10 +507,11 @@ input[type='radio']:checked:before {
   gap: 13px;
   cursor: pointer; }
 
-.introduction {
+.information {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  justify-content: center; }
 
 .information {
   display: flex;
@@ -521,7 +528,8 @@ input[type='radio']:checked:before {
   width: 80%;
   padding: 20px; }
   .information__title {
-    color: #1078ad; }
+    color: #1078ad;
+    text-align: center; }
   .information__info {
     color: black;
     font-weight: bold;
@@ -532,7 +540,7 @@ input[type='radio']:checked:before {
     height: 1px;
     border: none; }
 
-.quiz__btn {
+.buttons__btns {
   color: white;
   background-color: #1078ad;
   font-size: 1.5rem;
@@ -544,4 +552,5 @@ input[type='radio']:checked:before {
   margin-top: 20px;
   margin-bottom: 10px;
   border: none;
-  align-items: center; }
+  align-items: center;
+  justify-content: center; }
