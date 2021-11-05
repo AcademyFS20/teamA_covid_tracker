@@ -31,8 +31,6 @@ main {
 .testpara {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
   gap: 144px; }
   .testpara__imgaccueil {
     width: 60%;
@@ -260,8 +258,11 @@ main {
 
 .paraText {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start; }
+  flex-direction: column; }
+  .paraText__parafirst {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; }
 
 h3 {
   text-align: center; }

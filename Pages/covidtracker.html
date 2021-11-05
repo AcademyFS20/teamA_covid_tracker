@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>covid-tracker</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
@@ -12,19 +12,9 @@
     <link rel="stylesheet" type="text/css" href="../CSS/style.css" />
   </head>
   <body>
-    <header id="apiPageHeader">
-      <img
-        src="/assets/SVG/logo__sante-1.svg"
-        alt="logo de la ministre de la santé marocaine"/>
-      <div class= headerTitle>
-        <i class="fas fa-chart-pie"></i>
-      <h3>Covid tracker</h3>
-      </div>
-      <a><button class="resultsBtn">results</button></a>
-    </header>
-    <main id="apiMainContent">
+      <main id="apiMainContent">
       <div class="paraText">
-        <div>
+        <div class="paraText__parafirst">
           <h3>Statisques et visualisation de données Covid19</h3>
           <p>
             CovidTracker est un outil permettant de suivre l'évolution de
@@ -33,30 +23,18 @@
         </div>
         <div>
           <h3>En un coup d'oeil</h3>
-          <!-- <p>Mon Nov 01 2021</p> -->
         </div>
         <div class="charts">
           <h3 class="doughnutLabel"></h3>
-          <canvas id="chartWorldSummary" width="610" height="610"></canvas>
+          <canvas id="chartWorldSummary" width="377" height="377"></canvas>
           <h3 class="barLines"></h3>
-          <canvas id="chartCountries" width="610" height="610"></canvas>
+          <canvas id="chartCountries" width="377" height="377"></canvas>
           <h3 class="barLabel"></h3>
-          <canvas id="chartMorocco" width="610" height="610"></canvas>
+          <canvas id="chartMorocco" width="377" height="377"></canvas>
         </div>
       </div>
     </main>
-    <footer id="apiPageFooter">
-      <div class="socialMediaIcons">
-        <i class="fab fa-facebook-square"></i>
-        <i class="fab fa-twitter-square"></i>
-        <i class="fab fa-instagram-square"></i>
-      </div>
-      <div class="linksToCharts">
-        <a href="">World Summary</a>
-        <a href="">Contries Summary</a>
-        <a href="">Morocco Summary</a>
-      </div>
-    </footer>
+   
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="../js/scriptapi.js"></script>
   </body>

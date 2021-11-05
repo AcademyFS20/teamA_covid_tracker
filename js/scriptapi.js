@@ -10,57 +10,6 @@ const doughnutLabel = document.querySelector('.doughnutLabel');
 const barLabel = document.querySelector(".barLabel");
 const barLines = document.querySelector(".barLines");
 
-
-
-/* get data from the api */
-
-// with fetch
-// fetch(apiWorld, {
-//     method: "GET",
-//     headers: {"Content-type": "application/json;charset=UTF-8"}
-//     })
-//     // Handle success
-//     .then(dataWorld => dataWorld.json())  // convert to json
-//     .then(resWolrd => console.log(resWolrd))    //print data to console
-//     .catch(err => console.log('Request Failed', err)); // Catch errorsS
-
-
-// with async/await
-// const getDataWorld = async () => {
-//     try {
-//     	const responseWorld = await fetch(apiWorld)
-//     	const dataWorld = await responseWorld.json()
-//         console.log(dataWorld)
-//     } catch (err) {
-//        console.log(err)
-//     }
-
-// }
-// getDataWorld()
-
-
-// // with async/await: prepend the function with async
-// getDataWorld()
-// .then(response => {
-//     const {Global} = response;
-//     const {Date, NewConfirmed,NewDeaths,NewRecovered,TotalConfirmed,TotalDeaths,TotalRecovered} = Global;
-
-//     console.log(Global);
-//     console.log(Date);
-//     console.log(NewConfirmed);
-//     console.log(NewDeaths);
-//     console.log(NewRecovered);
-//     console.log(TotalConfirmed);
-//     console.log(TotalDeaths);
-//     console.log(TotalRecovered);
-
-//     ShowDataWorld();
-
-// })
-// .catch(error=>console.log("erreur"));
-
-
-
 async function getDataWorld() {
   try {
     response = await fetch(apiWorld);
@@ -81,14 +30,17 @@ window.addEventListener("DOMContentLoaded", () => {
 async function ShowDataWorld() {
   const promiseResponse = await getDataWorld();
   const { Global } = promiseResponse;
-  const { Date, NewConfirmed, NewDeaths, NewRecovered, TotalConfirmed, TotalDeaths, TotalRecovered } = Global;
+  const {NewConfirmed, NewDeaths, NewRecovered, TotalConfirmed, TotalDeaths, TotalRecovered } = Global;
   const { Countries } = promiseResponse;
 
   let CountryByCase = Countries.map((item) => {
 
     return { blad: item.Country, mout: item.TotalDeaths, lescas: item.TotalConfirmed }
-  })
+  });
   
+  let {Date} = promiseResponse;
+  console.log(Date);
+
   const CountryByCase30 = CountryByCase.slice(0, 30)
 
   const countries30 = CountryByCase30.map((item) =>{
@@ -107,16 +59,15 @@ async function ShowDataWorld() {
 console.log(Date);
   let options = { year: 'numeric', month: 'long', day: 'numeric' };
   let date= Date.slice(0,10);
-  let today = date.toLocaleString('en-US', options);
-  console.log(today);
+ 
 
-  doughnutLabel.textContent = `World Summary  ${today}`;
+  doughnutLabel.textContent = `World Summary  ${date}`;
   const worldSummaryChart = new Chart(chartDoughnut, {
     type: 'doughnut',
     data: {
       labels: ["NewConfirmed", "NewDeaths", "NewRecovered", "TotalConfirmed", "TotalDeaths", "TotalRecovered"],
       datasets: [{
-        label: `World Summary ${Date}`,
+        label: `World Summary ${date}`,
         data: [NewConfirmed, NewDeaths, NewRecovered, TotalConfirmed, TotalDeaths, TotalRecovered],
         backgroundColor: [
           'rgba(255, 99, 132, 0.2)',
@@ -139,7 +90,7 @@ console.log(Date);
     },
   });
  
-   barLines.textContent = `Countries${today}`;
+   barLines.textContent = `Countries${date}`;
   const chartCountries = new Chart(chartLines, {
     type: 'line',
     data: {
@@ -234,15 +185,11 @@ let ArrayMorocco = promiseForApiMorocco.map((item) => {
 
  
 
-  // let date = new Date(Date(lastFivedays.day));
   let options = { year: 'numeric', month: 'long', day: 'numeric' }
-  
-
-  
+   
   let dateP0= new Date((lastFivedays[0].day));
   let day0 =dateP0.toLocaleString('en-US', options);
   
-
   let dateP1= new Date((lastFivedays[1].day));
   let day1= dateP1.toLocaleString('en-US', options);
 
@@ -256,8 +203,6 @@ let ArrayMorocco = promiseForApiMorocco.map((item) => {
   day4=dateP4.toLocaleString('en-US', options);
 
   
-
-
   barLabel.textContent = `Morocco cases ${day4}`;
   const chartMorocco = new Chart(chartBars, {
   type: 'bar',
