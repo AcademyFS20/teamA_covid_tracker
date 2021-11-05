@@ -224,17 +224,22 @@ nextBtn.innerText="Question suivante";
         <input type="radio" class="questions__butn" value="answers">
         <label for="button"> Ne sait pas</label>
     </div>`,
-    nextBtn.innerText="Envoyer";
+    
+    nextBtn.innerText="Resultat";
     nextBtn.value="submit";
-    testStart.addEventListener('click', ()=>{
-    document.getElementsById("nextbtn").setAttribute("id","subbtn");
-    
+  
+    nextBtn.addEventListener('click',() => {
+
+
+        
+        const element = document.createElement('p');
+        element.innerHTML = 'RESULTAT du TEST';
+
+        testPage.appendChild(element);
+
+
     })
-    const submitbtn=document.getElementsById("subbtn");
-    submitbtn.addEventListener('click', () =>{
-    testPage.style.display='none';
-})
-    
+ 
 }
     
     else if (i==0)

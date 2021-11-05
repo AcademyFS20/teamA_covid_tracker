@@ -554,3 +554,14 @@ input[type='radio']:checked:before {
   border: none;
   align-items: center;
   justify-content: center; }
+
+
+  .resultat{
+
+    display: none;
+  }
+
+  .visible{
+
+    display:block !important;
+  }
