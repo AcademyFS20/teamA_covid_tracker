@@ -45,6 +45,9 @@
             </div>
           </div>
           
+
+
+         
         <div class="information" id="shown">
           <div class="information1" >
             <h2 class="information__title">Introduction</h2>
@@ -62,6 +65,14 @@
 
 
           <div class="pagequestionnaire" id="hidden">
+            <div class="progresspercent" id="percentage">
+              <p class="progresspercent__question" id="questionquiz">Question</p>
+              <h3 id="questioncounter" class="progresspercent__questioncounter"></h3>
+              <div class="progesspercent__bar" id="bar">
+                <div class="progresspercent__filler" id="fill"></div>
+  
+            </div>
+            </div>
             <div class="titletest"></div>
             
             <div class="questions">
@@ -81,12 +92,21 @@
             </div>
             <div class="buttons">
                 
-                <button type="button" class="buttons__btns1" id="prevbtn" >Question précédante</button>
-                <button type="button" class="buttons__btns2" id="nextbtn">Question suivante</button>
+                <button type="button" class="buttons__btns1" id="prevbtn" value="prebtn">Question précédante</button>
+                <button type="button" class="buttons__btns2" id="nextbtn" value="nexbtn">Question suivante</button>
               </div>
 
             </div>
           </div>
+
+          <div class="résultat" id="result" style="display: none;">
+            <div class="résultat__final" >
+              <h2 class="résultat__title">C'est la fin du Quiz! Cliquer pour afficher votre résultat!</h2>
+          </div>
+          <div class="buttons">
+              <button type="button" class="buttons__btns" id="btnresult">Afficher le résultat</button>
+          </div>
+        </div>
 
 
              
