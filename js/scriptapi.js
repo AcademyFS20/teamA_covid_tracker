@@ -9,6 +9,8 @@ const chartBars = document.querySelector("#chartMorocco").getContext('2d');
 const doughnutLabel = document.querySelector('.doughnutLabel');
 const barLabel = document.querySelector(".barLabel");
 const barLines = document.querySelector(".barLines");
+const todayis = document.querySelector(".today")
+console.log (todayis);
 
 async function getDataWorld() {
   try {
@@ -22,15 +24,15 @@ async function getDataWorld() {
   }
 }
 
-window.addEventListener("DOMContentLoaded", () => {
+window.addEventListener("DOMContentLoaded", async () => {
 
   ShowDataWorld();
 })
 
 async function ShowDataWorld() {
   const promiseResponse = await getDataWorld();
-  const { Global } = promiseResponse;
-  const {NewConfirmed, NewDeaths, NewRecovered, TotalConfirmed, TotalDeaths, TotalRecovered } = Global;
+  const { Global,} = promiseResponse;
+  const {Date:today,NewConfirmed, NewDeaths, NewRecovered, TotalConfirmed, TotalDeaths, TotalRecovered } = Global;
   const { Countries } = promiseResponse;
 
   let CountryByCase = Countries.map((item) => {
@@ -38,9 +40,7 @@ async function ShowDataWorld() {
     return { blad: item.Country, mout: item.TotalDeaths, lescas: item.TotalConfirmed }
   });
   
-  let {Date} = promiseResponse;
-  console.log(Date);
-
+  
   const CountryByCase30 = CountryByCase.slice(0, 30)
 
   const countries30 = CountryByCase30.map((item) =>{
@@ -56,18 +56,23 @@ async function ShowDataWorld() {
     return item.lescas;
   });
 
-console.log(Date);
-  let options = { year: 'numeric', month: 'long', day: 'numeric' };
-  let date= Date.slice(0,10);
+  const Today = Date.parse(today);
+  const parsedDate = new Date(Today);
+  console.log(parsedDate)
+  const day = parsedDate.toLocaleString('en-US', {day:'numeric'});
+  const month = parsedDate.toLocaleString('en-US', {month:'long'});
+  const year = parsedDate.toLocaleString('en-US', {year:"numeric"});
+  console.log(day,month,year)
+
  
 
-  doughnutLabel.textContent = `World Summary  ${date}`;
+  doughnutLabel.textContent = `World Summary  ${month + " " +  day + "," + " " + year}`;
   const worldSummaryChart = new Chart(chartDoughnut, {
     type: 'doughnut',
     data: {
       labels: ["NewConfirmed", "NewDeaths", "NewRecovered", "TotalConfirmed", "TotalDeaths", "TotalRecovered"],
       datasets: [{
-        label: `World Summary ${date}`,
+        label: `World Summary ${today}`,
         data: [NewConfirmed, NewDeaths, NewRecovered, TotalConfirmed, TotalDeaths, TotalRecovered],
         backgroundColor: [
           'rgba(255, 99, 132, 0.2)',
@@ -89,8 +94,8 @@ console.log(Date);
       }]
     },
   });
- 
-   barLines.textContent = `Countries${date}`;
+  todayis.textContent = month + " " +  day + "," + " " + year
+  barLines.textContent = `Countries  ${month + " " +  day + "," + " " + year}`;
   const chartCountries = new Chart(chartLines, {
     type: 'line',
     data: {

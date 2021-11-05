@@ -263,6 +263,15 @@ main {
     display: flex;
     flex-direction: column;
     align-items: flex-start; }
+  .paraText__parasecond {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 13px; }
+
+.today {
+  margin: -20px 0 0 0;
+  color: #0000ff; }
 
 h3 {
   text-align: center; }
