@@ -7,8 +7,7 @@ const infoPage=document.getElementById('shown');
 const testPage= document.getElementById('hidden');
 const testStart=document.getElementById('btnquiz');
 
-// const resultat=document.getElementsById('result');
-//const resultBtn=document.getElementsById('btnresult');
+
 const questionList=["","Pensez-vous avoir eu de la fièvre ces dernièrs jours (frissons, sueurs) ?", "Si oui : quelle est votre température ?", "Avez-vous une toux ou une augmentation de votre toux habituelle ces derniers jours ?", "Avez-vous des douleurs musculaires ou des courbatures inhabituelles ces derniers jours ?", "Avez-vous un mal de gorge apparu ces derniers jours ?", "Avez-vous de la diarrhée ces dernières 24 heures (au moins 3 selles molles) ?", "Avez-vous une fatigue inhabituelle ces derniers jours ?", "Avez-vous des difficultés importantes pour vous alimenter ou boire depuis plus de 24h ?", "Avez-vous vu apparaître une gêne respiratoire ou une augmentation de votre gêne respiratoire habituelle ?", "Comment vous sentez-vous ?", "Avez-vous d’autre symptôme ?", "Quel est votre âge ?", "Quel est votre poids ? Quelle est votre taille ?", "Avez-vous de l’hypertension artérielle ? Ou avez-vous une maladie cardiaque ou vasculaire ? Ou prenez vous un traitement à visée cardiologique ?", "Êtes-vous diabétique ?", "Avez-vous ou avez-vous eu un cancer ?", "Avez-vous une maladie respiratoire ? Ou êtes-vous suivi par un pneumologue ?", "Avez-vous une insuffisance rénale chronique dialysée ?", "Avez-vous une maladie chronique du foie ?", "Êtes-vous enceinte ?", "Avez-vous une maladie connue pour diminuer vos défenses immunitaires ?", "Prenez-vous un traitement immunosuppresseur ? C’est un traitement qui diminue vos défenses contre les infections. Voici quelques exemples : corticoïdes, méthotrexate, ciclosporine, tacrolimus, azathioprine, cyclophosphamide (liste non exhaustive)."];
 
 
@@ -17,10 +16,13 @@ infoPage.style.display='block';
 testPage.style.display='none';
 
 
+
 testStart.addEventListener('click', ()=>{
         
         infoPage.style.display = 'none';
+        
         testPage.style.display = 'block';
+
 
         
         
@@ -29,8 +31,8 @@ testStart.addEventListener('click', ()=>{
 })
 
 
-/*const counter=document.getElementsById("questioncounter");
-const progressq=document.getElementsById("questionquiz");
+/*const counter=document.getElementById("questioncounter");
+const progressq=document.getElementById("questionquiz");
 
 const MaxQuestions= 22;
 let availableQuestions=[];
@@ -43,7 +45,7 @@ getNewQuestion = () => {
       return window.location.assign("/end.html");
     }
     counter++;
-    counterText.innerText=counter+ "/" + MaxQuestions;
+    counterText.innerText=counter+ "/" + MaxQuestions;}
     /*progressText.innerText = `Question ${questionCounter}/${MAX_QUESTIONS}`;
     
     progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`;
@@ -236,7 +238,14 @@ nextBtn.innerText="Question suivante";
         element.innerHTML = 'RESULTAT du TEST';
 
         testPage.appendChild(element);
-
+        previousBtn.style.display="none";
+        answers.style.display="none";
+        question.style.display="none";
+        nextBtn.style.display="none";
+        // progressPercentage.style.display="none";
+     const questionProgress = document.getElementById("questionquiz");
+        
+        questionProgress.style.display="none";
 
     })
  
@@ -247,10 +256,8 @@ nextBtn.innerText="Question suivante";
 
     }
 
-    answers.classList.add(`.questions__answers'${i}`);
-    answers.classList.remove(`.questions__answers'${i-1}`);
-    question.innerText=questionList[i];
-    
+
+
 })
 
 previousBtn.addEventListener("click", function(){
@@ -417,26 +424,26 @@ nextBtn.innerText="Question suivante";
         <input type="radio" class="questions__butn" value="answers">
         <label for="button"> Ne sait pas</label>
     </div>`
-    nextBtn.innerText="Envoyer";
+
+    nextBtn.innerText="Resultat";
     nextBtn.value="submit";
-    
-    }
-    answers.classList.add(`.questions__answers'${i}`);
-    answers.classList.remove(`.questions__answers'${i+1}`);
-    question.innerText=questionList[i];
+  
+    nextBtn.addEventListener('click',() => {
 
-    testStart.addEventListener('click', ()=>{
-        document.getElementsById('nextbtn').id='subbtn';
+
         
-        })
-        const submitbtn=document.getElementsById('subbtn');
-        submitbtn.addEventListener('click', () =>{
-            if(i=22){
-                testPage.style.display='none';
-            }
-        })
+        const element = document.createElement('p');
+        element.innerHTML = 'RESULTAT du TEST';
 
-
+        testPage.appendChild(element);
+        question.style.display="none";
+        previousBtn.style.display="none";
+      const divquest=document.querySelector('.progresspercent__question');
+      divquest.style.display="none";
+        
+    })
+    }
+   
 })
 
 
@@ -444,26 +451,28 @@ nextBtn.innerText="Question suivante";
 
 
 
-/*const submitbtn=document.getElementsById('subbtn');
-submitbtn.addEventListener('click', () =>{
-    testPage.style.display='none';
-})*/
+// const submitbtn=document.getElementById('subbtn');
+// submitbtn.addEventListener('click', () =>{
+//     testPage.style.display='none';
+// })
 
-/*const counter=document.getElementsById("questioncounter");
-const progressq=document.getElementsById("questionquiz");
+const stepCounter=document.getElementById("questioncounter");
+const progressq=document.getElementById("questionquiz");
 
 const MaxQuestions= 22;
 let availableQuestions=[];
-let counter=0;
+let steps=0;
 
 
 getNewQuestion = () => {
-    if (availableQuestions.length === 0 || counter >= MAX_QUESTIONS) {
+    if (availableQuestions.length === 0 || stepCounter >= MaxQuestions) {
      
       return window.location.assign("/end.html");
     }
     counter++;
-    counterText.innerText=counter+ "/" + MaxQuestions;
+    counterText.innerText=steps+ "/" + MaxQuestions;
+
+}
     /*progressText.innerText = `Question ${questionCounter}/${MAX_QUESTIONS}`;
     
     progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`;
@@ -471,5 +480,6 @@ getNewQuestion = () => {
     const questionIndex = Math.floor(Math.random() * availableQuesions.length);
     currentQuestion = availableQuesions[questionIndex];
     question.innerText = currentQuestion.question;*/
+    
 
 
