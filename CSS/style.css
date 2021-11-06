@@ -507,16 +507,19 @@ input[type='radio']:checked:before {
   gap: 13px;
   cursor: pointer; }
 
-.pagequestionnaire__bar {
-  width: 200px;
-  height: 10px;
-  border: 1px solid #1078ad;
-  border-radius: 10px; }
-
-.pagequestionnaire__filler {
-  height: 10px;
-  background-color: #1078ad;
-  width: 0%; }
+.pagequestionnaire {
+  display: flex;
+  align-items: center; }
+  .pagequestionnaire__bar {
+    width: 200px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: #bbe0f3; }
+  .pagequestionnaire__filler {
+    height: 10px;
+    background-color: #1078ad;
+    width: 0%;
+    border-radius: 10px; }
 
 .information {
   display: flex;
