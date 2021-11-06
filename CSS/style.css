@@ -507,6 +507,17 @@ input[type='radio']:checked:before {
   gap: 13px;
   cursor: pointer; }
 
+.pagequestionnaire__bar {
+  width: 200px;
+  height: 10px;
+  border: 1px solid #1078ad;
+  border-radius: 10px; }
+
+.pagequestionnaire__filler {
+  height: 10px;
+  background-color: #1078ad;
+  width: 0%; }
+
 .information {
   display: flex;
   flex-direction: column;
@@ -554,14 +565,3 @@ input[type='radio']:checked:before {
   border: none;
   align-items: center;
   justify-content: center; }
-
-
-  .resultat{
-
-    display: none;
-  }
-
-  .visible{
-
-    display:block !important;
-  }
