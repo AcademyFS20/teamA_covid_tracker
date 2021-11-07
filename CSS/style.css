@@ -414,10 +414,21 @@ p {
 .progressbar {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   width: 300px;
+  max-width: 100%;
   margin: 0 auto;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  .progressbar__line {
+    width: 230px;
+    background-color: #1078ad;
+    height: 5px;
+    top: 20%;
+    position: absolute;
+    margin-left: 10%; }
   .progressbar__stepper {
     text-align: center; }
   .progressbar__title {
@@ -426,26 +437,27 @@ p {
     font-size: 0.8rem;
     font-weight: bold; }
   .progressbar__bullet {
-    height: 20px;
-    width: 20px;
-    border-radius: 100%;
-    border: 1px solid #1078ad;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: 1px solid #f4cf1b;
     display: inline-block;
+    align-items: center;
+    justify-content: center;
     position: relative;
     color: #1078ad;
-    background-color: #1078ad;
-    line-height: 20px; }
-  .progressbar__bullet.completed {
-    color: #f4cf1b;
-    background-color: #91c0d9; }
-  .progressbar__bullet.completed::after {
-    content: '';
-    position: absolute;
-    height: 2px;
-    width: 100px;
-    background-color: #3b9f58;
-    right: -100px;
-    bottom: 10px; }
+    background-color: #f4cf1b;
+    border: 10px solid white;
+    border-radius: 50px; }
+
+.progressbar__bullet.active {
+  border-color: #1078ad; }
+
+.progressbar__bullet.disabled {
+  border-color: #1078ad; }
+
+.progressbar__bullet.shown {
+  border-color: #1078ad; }
 
 .questions {
   display: flex;

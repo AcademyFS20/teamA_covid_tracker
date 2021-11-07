@@ -31,16 +31,17 @@
       
         <form class="questionnaire" id="questionnaires">
           <div class="progressbar" id="progress">
+            <div class="progressbar__line" id="line"></div>
             <div class="progressbar__stepper">
-              <div class="progressbar__bullet">&bull;</div>
+              <div class="progressbar__bullet active" id="one"></div>
               <p class="progressbar__title">Informations</p>
             </div>
             <div class="progressbar__stepper">
-              <div class="progressbar__bullet">&bull;</div>
+              <div class="progressbar__bullet disabled" id="two"></div>
               <p class="progressbar__title">Test</p>
             </div>
             <div class="progressbar__stepper">
-              <div class="progressbar__bullet">&bull;</div>
+              <div class="progressbar__bullet shown" id="three"></div>
               <p class="progressbar__title">Résultats</p>
             </div>
           </div>
@@ -100,7 +101,7 @@
             </div>
             <div class="buttons">
                 
-                <button type="button" class="buttons__btns1" id="prevbtn" value="prebtn">Question précédante</button>
+                <button type="button" class="buttons__btns1" id="prevbtn" value="prebtn" disabled>Question précédante</button>
                 <button type="button" class="buttons__btns2" id="nextbtn" value="nexbtn">Question suivante</button>
               </div>
 
