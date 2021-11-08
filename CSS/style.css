@@ -409,7 +409,6 @@ p {
   .contacts__btn {
     width: 70px;
     height: 30px;
-<<<<<<< HEAD
     font-size: 0.8rem; 
     align-items: center;
     gap: 144px;
@@ -535,6 +534,36 @@ p {
         align-items: center;
         justify-content: center;
         gap: 55px;
+        align-items: center; } }
+
+paraText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left; }
+
+@media screen and (min-width: 425px) and (max-width: 768px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 55px;
+    font-size: 0.8rem; }
+  .testpara {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 55px;
+    text-align: center; }
+    .testpara__imgaccueil {
+      width: 60%;
+      height: 80%; }
+    .testpara__text {
+      text-align: center; }
+      .testpara__text__paratitle {
+        color: #1a519e;
         text-align: center; }
         .testpara__imgaccueil {
           width: 60%;
@@ -627,7 +656,7 @@ p {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-<<<<<<< HEAD
+
         gap: 55px; }
         .symptomes__title {
           color: #1a519e;
@@ -1017,32 +1046,19 @@ p {
                 font-size: 1.5rem; }
               .logo-sante {
                 width: "21px"; } }            
-=======
-        align-items: center; } }
 
-#apiPageHeader {
-  width: 100%;
-  height: 89px;
-  background-color: #1078ad;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center; }
 
-.headerTitle {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 13px; }
 
-.resultsBtn {
-  width: 89px;
-  height: 34px;
-  background-color: #1078ad;
-  color: white;
-  font-size: 0.8rem;
-  border-radius: 6px; }
+
+
+
+
+ 
+  paraText {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left; } 
 
 #apiMainContent {
   width: 100%;
@@ -1073,18 +1089,7 @@ h3 {
 canvas {
   margin: 34px 0 34px 0; }
 
-#apiPageFooter {
-  width: 100%;
-  height: 144px;
-  background-color: #1078ad;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 13px; }
->>>>>>> brahim
-=======
-    font-size: 0.8rem; } }
+
 
 .hidden {
   display: none !important; }
@@ -1258,4 +1263,4 @@ input[type='radio']:checked:before {
   border: none;
   align-items: center;
   justify-content: center; }
->>>>>>> Sammi
+
