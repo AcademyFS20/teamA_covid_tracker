@@ -3,5 +3,4 @@
 package.json
 package-lock.json
 /other
-/js/script.js
-/js/testscript.html
+/test

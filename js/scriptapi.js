@@ -125,7 +125,6 @@ async function ShowDataWorld() {
         },
         scales: {
             y: {
-                // beginAtZero: true,
                 type: 'linear',
                 display: true,
                 position: 'left',
@@ -139,7 +138,6 @@ async function ShowDataWorld() {
                   }
             },
             y1: {
-              // beginAtZero: true,
               type: 'linear',
               display: true,
               position: 'right',
