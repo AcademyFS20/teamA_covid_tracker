@@ -315,7 +315,8 @@ p {
     width: 150px;
     height: 40px;
     text-decoration: none;
-    font-size: 0.8rem; }
+    font-size: 0.8rem;
+    cursor: pointer; }
   .test__img {
     width: 50px; }
   .contacts {
