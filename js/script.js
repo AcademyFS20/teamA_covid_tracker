@@ -183,15 +183,15 @@ nextBtn.innerText="Question suivante";
     else if (i==14)
     {
         answers.innerHTML=`<div class="questions__answer">
-        <input type="radio" class="questions__butn" value="answers" name="btnanswer" value="OUI" checked>
+        <input type="radio" class="questions__butn"  name="btnanswer" value="OUI" checked>
         <label for="button"> Oui</label>
     </div>
     <div class="questions__answer">
-        <input type="radio" class="questions__butn" value="answers" name="btnanswer" value="NON">
+        <input type="radio" class="questions__butn"  name="btnanswer" value="NON">
         <label for="button"> Non</label>
     </div>
     <div class="questions__answer">
-        <input type="radio" class="questions__butn" value="answers" name="btnanswer" value="Ne sait pas">
+        <input type="radio" class="questions__butn"  name="btnanswer" value="Ne sait pas">
         <label for="button"> Ne sait pas</label>
     </div>`;
     nextBtn.innerText="Question suivante";
@@ -199,15 +199,15 @@ nextBtn.innerText="Question suivante";
     else if(i==20)
     {
         answers.innerHTML=`<div class="questions__answer">
-        <input type="radio" class="questions__butn" value="answers" name="btnanswer" value="OUI" checked>
+        <input type="radio" class="questions__butn" name="btnanswer" value="OUI" checked>
         <label for="button"> Oui</label>
     </div>
     <div class="questions__answer">
-        <input type="radio" class="questions__butn" value="answers" name="btnanswer" value="NON">
+        <input type="radio" class="questions__butn"  name="btnanswer" value="NON">
         <label for="button"> Non</label>
     </div>
     <div class="questions__answer">
-        <input type="radio" class="questions__butn" value="answers" name="btnanswer" value="Non applicable">
+        <input type="radio" class="questions__butn" name="btnanswer" value="Non applicable">
         <label for="button"> Non applicable</label>
     </div>`;
     nextBtn.innerText="Question suivante";
@@ -215,15 +215,15 @@ nextBtn.innerText="Question suivante";
     else if(i==21)
     {
         answers.innerHTML=`<div class="questions__answer">
-        <input type="radio" class="questions__butn" value="answers" name="btnanswer" value="OUI" checked>
+        <input type="radio" class="questions__butn"  name="btnanswer" value="OUI" checked>
         <label for="button"> Oui</label>
     </div>
     <div class="questions__answer">
-        <input type="radio" class="questions__butn" value="answers" name="btnanswer" value="NON">
+        <input type="radio" class="questions__butn" name="btnanswer" value="NON">
         <label for="button"> Non</label>
     </div>
     <div class="questions__answer">
-        <input type="radio" class="questions__butn" value="answers" name="btnanswer" value="Ne sait pas">
+        <input type="radio" class="questions__butn" name="btnanswer" value="Ne sait pas">
         <label for="button"> Ne sait pas</label>
     </div>`;
     nextBtn.innerText="Question suivante";
@@ -231,15 +231,15 @@ nextBtn.innerText="Question suivante";
     else if(i==22)
     {
         answers.innerHTML=`<div class="questions__answer">
-        <input type="radio" class="questions__butn" value="answers" name="btnanswer" value="OUI" checked>
+        <input type="radio" class="questions__butn" name="btnanswer" value="OUI" checked>
         <label for="button"> Oui</label>
     </div>
     <div class="questions__answer">
-        <input type="radio" class="questions__butn" value="answers" name="btnanswer" value="NON">
+        <input type="radio" class="questions__butn"  name="btnanswer" value="NON">
         <label for="button"> Non</label>
     </div>
     <div class="questions__answer">
-        <input type="radio" class="questions__butn" value="answers" name="btnanswer" value="Ne sait pas">
+        <input type="radio" class="questions__butn"  name="btnanswer" value="Ne sait pas">
         <label for="button"> Ne sait pas</label>
     </div>`,
     
@@ -272,10 +272,10 @@ nextBtn.innerText="Question suivante";
  
 }
     
-    // else if (i==0)
-    // {
+    else if (i==0)
+    {
 
-    // }
+    }
 
     answers.classList.add(`.questions__answers'${i}`);
     answers.classList.remove(`.questions__answers'${i-1}`);
