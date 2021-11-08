@@ -628,7 +628,8 @@ input[type='radio']:checked:before {
     padding: 20px;
     margin-bottom: 20px;
     gap: 30px;
-    width: 400px;
+    width: 600px;
+    width: 100%;
     height: 600px; }
   .pagequestionnaire {
     display: flex;
@@ -718,7 +719,7 @@ input[type='radio']:checked:before {
   margin-left: 140px;
   cursor: pointer; }
 
-@media screen and (min-width: 320px) and (max-width: 425px) {
+@media screen and (min-width: 320px) and (max-width: 424px) {
   .information {
     display: flex;
     flex-direction: column;
@@ -730,7 +731,7 @@ input[type='radio']:checked:before {
     font-size: 18px;
     box-sizing: border-box;
     border-radius: 5px;
-    width: 100%;
+    width: 150%;
     padding: 20px;
     font-size: 0.8rem; }
     .information__title {
@@ -761,20 +762,22 @@ input[type='radio']:checked:before {
     border: none;
     align-items: center;
     justify-content: center;
-    margin-left: 40px;
+    margin-left: 94px;
     cursor: pointer; } }
 
 @media screen and (min-width: 425px) and (max-width: 768px) {
   .information {
     height: 600px;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     background-color: #91c0d9;
     font-size: 18px;
     box-sizing: border-box;
     border-radius: 5px;
-    width: 80%;
-    padding: 20px;
-    font-size: 1.3rem; }
+    width: 105%;
+    font-size: 0.8rem; }
     .information__title {
       font-size: 1.3rem; }
     .information__info {
@@ -792,9 +795,6 @@ input[type='radio']:checked:before {
     text-decoration: none;
     border-radius: 13px;
     margin-top: 20px;
-    margin-bottom: 10px;
     border: none;
-    align-items: center;
-    justify-content: center;
-    margin-left: 40px;
+    margin-left: 240px;
     cursor: pointer; } }

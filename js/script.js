@@ -42,7 +42,15 @@ testStart.addEventListener('click', ()=>{
         
     })
     
-   
+           // let e=1
+    //     for(let e=1; e<23; e++) {
+    //     textProgressQ.innerText=`Question ${e}/${questionsIndex}`;
+    //     progressBarFiller.style.width= `${(e/questionsIndex)*100}%`;
+    // }     
+    // let e=1;
+    // textProgressQ.innerText=`Question ${e}/${questionsIndex}`;
+    // progressBarFiller.style.width= `${(e/questionsIndex)*100}%`; 
+    // e++;
     
 })
 
@@ -235,7 +243,7 @@ nextBtn.innerText="Question suivante";
         answers.style.display="none";
         question.style.display="none";
         nextBtn.style.display="none";
-     const questionProgress = document.getElementById("questionquiz");
+        const questionProgress = document.getElementById("questionquiz");
         
         questionProgress.style.display="none";
         progressbar.style.display='none';
