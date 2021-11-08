@@ -31,18 +31,27 @@
       
         <form class="questionnaire" id="questionnaires">
           <div class="progressbar" id="progress">
+            <div class="progressbar__line" id="line"></div>
             <div class="progressbar__stepper">
-              <div class="progressbar__bullet">&bull;</div>
+              <div class="progressbar__bullet active" id="one"></div>
               <p class="progressbar__title">Informations</p>
             </div>
             <div class="progressbar__stepper">
-              <div class="progressbar__bullet">&bull;</div>
+              <div class="progressbar__bullet disabled" id="two"></div>
               <p class="progressbar__title">Test</p>
             </div>
             <div class="progressbar__stepper">
-              <div class="progressbar__bullet">&bull;</div>
+              <div class="progressbar__bullet shown" id="three"></div>
               <p class="progressbar__title">Résultats</p>
             </div>
+          </div>
+          <div class="pagequestionnaire" id="percentage">
+            <p class="pagequestionnaire__question" id="questionquiz">Question</p>
+            
+            <div class="pagequestionnaire__bar" id="bar">
+              <div class="pagequestionnaire__filler" id="fill"></div>
+
+          </div>
           </div>
           
 
@@ -51,9 +60,11 @@
         <div class="information" id="shown">
           <div class="information1" >
             <h2 class="information__title">Introduction</h2>
-            <p class="information__info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque accusamus pariatur, nisi ut ipsam earum amet sunt optio cumque! Aliquid quae voluptas dicta inventore nobis. Corporis tenetur quae nihil magnam?</p>
+            <p class="information__info">Lorem ipsum dolor sit amet consectetur adipisicing elit.Eaque accusamus pariatur, nisi ut ipsam earum amet sunt optio cumque!</p>
+             <p class="information__info">Aliquid quae voluptas dicta inventore nobis. Corporis tenetur quae nihil magnam?</p>
             <hr>
-            <p class="information__info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere quidem a, accusamus minima, cupiditate quasi perspiciatis repellat consequatur illo, qui praesentium optio. Veritatis cum, id at incidunt quo magni quam?</p>
+            <p class="information__info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere quidem a, accusamus minima,</p>
+               <p class="information__info">cupiditate quasi perspiciatis repellat consequatur illo, qui praesentium optio. Veritatis cum, id at incidunt quo magni quam?</p>
         </div>
         <div class="buttons">
             <button type="button" class="buttons__btns" id="btnquiz">Démarrer le test</button>
@@ -65,14 +76,14 @@
 
 
           <div class="pagequestionnaire" id="hidden">
-            <div class="pagequestionnaire__progresspercent" id="percentage">
+            <!--<div class="pagequestionnaire__progresspercent" id="percentage">
               <p class="pagequestionnaire__question" id="questionquiz">Question</p>
               
               <div class="pagequestionnaire__bar" id="bar">
                 <div class="pagequestionnaire__filler" id="fill"></div>
   
             </div>
-            </div>
+            </div>-->
             <div class="titletest"></div>
             
             <div class="questions">
