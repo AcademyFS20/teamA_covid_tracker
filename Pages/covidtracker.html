@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>covid-tracker</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css" />
+  </head>
+  <body>
+      <main id="apiMainContent">
+      <div class="paraText">
+        <div class="paraText__parafirst">
+          <h3>Statisques et visualisation de données Covid19</h3>
+          <p>
+            CovidTracker est un outil permettant de suivre l'évolution de
+            l'épidémie à Coronavirus au monde entier
+          </p>
+        </div>
+        <div class = "paraText__parasecond">
+           <h3>En un coup d'oeil</h3>
+           <p class="today"></p>
+        </div>
+        <div class="charts">
+          <h3 class="doughnutLabel"></h3>
+          <canvas id="chartWorldSummary" width="377" height="377"></canvas>
+          <h3 class="barLines"></h3>
+          <canvas id="chartCountries" width="377" height="377"></canvas>
+          <h3 class="barLabel"></h3>
+          <canvas id="chartMorocco" width="377" height="377"></canvas>
+        </div>
+      </div>
+    </main>
+   
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../js/scriptapi.js"></script>
+  </body>
+</html>
