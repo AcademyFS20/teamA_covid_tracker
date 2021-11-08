@@ -29,9 +29,6 @@ bulletThree.classList.remove('shown');
 
 
 
-let currentValue=1;
-//let i=0;
-//let maxQuestions=22;
 testStart.addEventListener('click', ()=>{
         
         infoPage.style.display = 'none';
@@ -45,19 +42,9 @@ testStart.addEventListener('click', ()=>{
         
     })
     
-    //questionCounterText.innerText=i+"/"+maxQuestions;
+   
     
 })
-
-
-
-
-
-
-
-
-
-
 
 //let questionCounter=0;
 let maxQuestions=22;
@@ -144,7 +131,7 @@ nextBtn.innerText="Question suivante";
     else if(i==11)
     {
         answers.innerHTML=`<div class="questions__answer">
-        <input type="text" id="answer" placeholder="Autres syptômes"> </div>`;
+        <input type="text" id="answer" placeholder="Autres symptômes" {border:2px solid $textColor2}> </div>`;
         nextBtn.innerText="Question suivante";
     }
     else if(i==12)
@@ -255,12 +242,6 @@ nextBtn.innerText="Question suivante";
         bulletOne.classList.remove('active');
         bulletTwo.classList.remove('disabled');
         bulletThree.classList.add('shown');
-
-        currentValue++;
-        if(currentValue>bullets.length){
-            currentValue=bullets.length;
-        }
-        update();
 
     })
 
@@ -462,14 +443,13 @@ nextBtn.innerText="Question suivante";
         testPage.appendChild(element);
         question.style.display="none";
         previousBtn.style.display="none";
-      const divquest=document.querySelector('.progresspercent__question');
-      divquest.style.display="none";
+        const divquest=document.querySelector('.progresspercent__question');
+        divquest.style.display="none";
+        // bulletOne.classList.remove('active');
+        // bulletTwo.classList.remove('disabled');
+        // bulletThree.classList.add('shown');
 
-      currentValue--;
-      if(currentValue<1){
-          currentValue=1;
-      }
-      update();
+      
         
     })
     }
@@ -478,10 +458,9 @@ nextBtn.innerText="Question suivante";
     answers.classList.remove(`.questions__answers'${i-1}`);
     question.innerText=questionList[i];
     
-
-
-
 })
+
+
 
 
 
