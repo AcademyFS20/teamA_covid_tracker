@@ -38,11 +38,13 @@ testStart.addEventListener('click', ()=>{
         bulletOne.classList.remove('active');
         bulletTwo.classList.add('disabled');
         bulletThree.classList.remove('shown');
-        
+
+       
         
     })
     
-           // let e=1
+    // let questionsIndex=22;
+
     //     for(let e=1; e<23; e++) {
     //     textProgressQ.innerText=`Question ${e}/${questionsIndex}`;
     //     progressBarFiller.style.width= `${(e/questionsIndex)*100}%`;
@@ -51,15 +53,20 @@ testStart.addEventListener('click', ()=>{
     // textProgressQ.innerText=`Question ${e}/${questionsIndex}`;
     // progressBarFiller.style.width= `${(e/questionsIndex)*100}%`; 
     // e++;
+    // console.log(e); 
+
     
 })
 
 //let questionCounter=0;
 let maxQuestions=22;
 let i=1;
+textProgressQ.innerText=`Question ${i}/${maxQuestions}`;
 nextBtn.addEventListener("click", function(){
+
+
     
-    textProgressQ.innerText=`Question ${i}/${maxQuestions}`;
+    textProgressQ.innerText =`Question ${i+1}/${maxQuestions}`;
     progressBarFiller.style.width= `${(i/maxQuestions)*100}%`;
 
 
@@ -73,11 +80,11 @@ nextBtn.addEventListener("click", function(){
     {
         answers.innerHTML=`
         <div class="questions__answer">
-                    <input type="radio" class="questions__butn" value="answers" name="btnanswer" checked>
+                    <input type="radio" class="questions__butn" value="OUI" name="btnanswer" checked>
                     <label for="button"> Oui</label>
                 </div>
                 <div class="questions__answer">
-                    <input type="radio" class="questions__butn" value="answers" name="btnanswer">
+                    <input type="radio" class="questions__butn" value="NON" name="btnanswer">
                     <label for="button"> Non</label>
                 </div>
         `;
@@ -86,15 +93,15 @@ nextBtn.addEventListener("click", function(){
     else if(i==1)
     {
         answers.innerHTML=`<div class="questions__answer">
-        <input type="radio" class="questions__butn" value="answers" name="btnanswer" checked>
+        <input type="radio" class="questions__butn" value="OUI" name="btnanswer" checked>
         <label for="button"> Oui</label>
     </div>
     <div class="questions__answer">
-        <input type="radio" class="questions__butn" value="answers" name="btnanswer">
+        <input type="radio" class="questions__butn" value="NON" name="btnanswer">
         <label for="button"> Non</label>
     </div>
     <div class="questions__answer">
-        <input type="radio" class="questions__butn" value="answers" name="btnanswer">
+        <input type="radio" class="questions__butn" value="Ne sait pas" name="btnanswer">
         <label for="button"> Ne sait pas</label>
     </div>`;
     nextBtn.innerText="Question suivante";
@@ -102,15 +109,19 @@ nextBtn.addEventListener("click", function(){
     else if(i==2)
     {
         answers.innerHTML= `<div class="questions__answer">
-        <input type="radio" id="degree1" class="questions__butn" name="btnanswer" checked>
+        <input type="radio" id="degree1" class="questions__butn" name="btnanswer" value="<=35,5°C" checked>
         <label for="degree">35,5 - 37,7°C</label>
     </div>
     <div class="questions__answer">
-        <input type="radio" id="degree2" class="questions__butn" name="btnanswer">
-        <label for="degree">37,8 – 38,9°C = seuil retenu</label>
+        <input type="radio" id="degree2" class="questions__butn" name="btnanswer" value="<=37,8°C">
+        <label for="degree">37,8 – 38,9°C</label>
+    </div>
+    <div class="questions__answer">
+        <input type="radio" id="degree2" class="questions__butn" name="btnanswer" value=">=39°C">
+        <label for="degree">= 39°C ou <= 35,4°C</label>
     </div>
     <div class="questionnaire__answer">
-        <input type="radio" id="degree3" class="questions__butn" name="btnanswer">
+        <input type="radio" id="degree3" class="questions__butn" name="btnanswer" value="Non renseignée">
         <label for="degree">Non renseignée & OUI à question précédente</label>
     </div>
 </div>`;
@@ -119,19 +130,19 @@ nextBtn.innerText="Question suivante";
     else if(i==10)
     {
         answers.innerHTML= `<div class="questions__answer">
-        <input type="radio" id="bien" class="questions__butn" name="btnanswer" checked >
+        <input type="radio" id="bien" class="questions__butn" name="btnanswer" value="Bien" checked >
      <label for="bien">Bien</label>
     </div>
     <div class="questions__answer">
-        <input type="radio" id="assez" class="questions__butn" name="btnanswer">
+        <input type="radio" id="assez" class="questions__butn" name="btnanswer" value="Assez bien">
         <label for="assez">Assez bien</label>
     </div>
     <div class="questions__answer">
-        <input type="radio" id="mal" class="questions__butn" name="btnanswer">
+        <input type="radio" id="mal" class="questions__butn" name="btnanswer" value="Mal">
         <label for="mal">Mal</label>
     </div>
     <div class="questions__answer">
-        <input type="radio" id="tresmal" class="questions__butn" name="btnanswer">
+        <input type="radio" id="tresmal" class="questions__butn" name="btnanswer" value="Très mal">
         <label for="tresmal">Très mal</label>
     </div>`;
     nextBtn.innerText="Question suivante";
@@ -139,21 +150,25 @@ nextBtn.innerText="Question suivante";
     else if(i==11)
     {
         answers.innerHTML=`<div class="questions__answer">
-        <input type="text" id="answer" placeholder="Autres symptômes" {border:2px solid $textColor2}> </div>`;
+        <input type="text" id="answer" placeholder="Autres symptômes" value="symptomes"> </div>`;
         nextBtn.innerText="Question suivante";
     }
     else if(i==12)
     {
         answers.innerHTML=`<div class="questions__answer">
-        <input type="radio" id="age1" class="questions__butn" name="btnanswer" checked>
+        <input type="radio" id="age1" class="questions__butn" name="btnanswer" value="< 50 ans" checked>
         <label for="seniors"> < 50 ans</label>
     </div>
     <div class="questions__answer">
-        <input type="radio" id="age2" class="questions__butn" name="btnanswer">
+        <input type="radio" id="age2" class="questions__butn" name="btnanswer" value="50-69 ans">
         <label for="adults"> 50-69 ans</label>
     </div>
     <div class="questions__answer">
-        <input type="radio" id="age3" class="questions__butn" name="btnanswer">
+        <input type="radio" id="age2" class="questions__butn" name="btnanswer" value=">= 70 ans">
+        <label for="adults"> >= 70 ans</label>
+    </div>
+    <div class="questions__answer">
+        <input type="radio" id="age3" class="questions__butn" name="btnanswer" value="< 15 ans">
         <label for="minors"> STOP si < 15 ans : Prenez contact avec votre médecin généraliste au moindre doute. Cette application n’est pour l’instant pas adaptée aux personnes de moins de 15 ans. En cas d’urgence, appeler le 15.</label>
     </div>`;
     nextBtn.innerText="Question suivante";
@@ -161,22 +176,22 @@ nextBtn.innerText="Question suivante";
     else if(i==13)
     {
         answers.innerHTML=`<div class="questions__answer">
-        <input type="text" id="answer" placeholder="Poids en kg">
-        <input type="text" id="answer" placeholder="Taille en cm"> </div>`;
+        <input type="text" id="answer" placeholder="Poids en kg" value="kg">
+        <input type="text" id="answer" placeholder="Taille en cm" value="cm"> </div>`;
         nextBtn.innerText="Question suivante";
     }
     else if (i==14)
     {
         answers.innerHTML=`<div class="questions__answer">
-        <input type="radio" class="questions__butn" value="answers" name="btnanswer" checked>
+        <input type="radio" class="questions__butn" value="answers" name="btnanswer" value="OUI" checked>
         <label for="button"> Oui</label>
     </div>
     <div class="questions__answer">
-        <input type="radio" class="questions__butn" value="answers" name="btnanswer">
+        <input type="radio" class="questions__butn" value="answers" name="btnanswer" value="NON">
         <label for="button"> Non</label>
     </div>
     <div class="questions__answer">
-        <input type="radio" class="questions__butn" value="answers" name="btnanswer">
+        <input type="radio" class="questions__butn" value="answers" name="btnanswer" value="Ne sait pas">
         <label for="button"> Ne sait pas</label>
     </div>`;
     nextBtn.innerText="Question suivante";
@@ -184,15 +199,15 @@ nextBtn.innerText="Question suivante";
     else if(i==20)
     {
         answers.innerHTML=`<div class="questions__answer">
-        <input type="radio" class="questions__butn" value="answers" name="btnanswer" checked>
+        <input type="radio" class="questions__butn" value="answers" name="btnanswer" value="OUI" checked>
         <label for="button"> Oui</label>
     </div>
     <div class="questions__answer">
-        <input type="radio" class="questions__butn" value="answers" name="btnanswer">
+        <input type="radio" class="questions__butn" value="answers" name="btnanswer" value="NON">
         <label for="button"> Non</label>
     </div>
     <div class="questions__answer">
-        <input type="radio" class="questions__butn" value="answers" name="btnanswer">
+        <input type="radio" class="questions__butn" value="answers" name="btnanswer" value="Non applicable">
         <label for="button"> Non applicable</label>
     </div>`;
     nextBtn.innerText="Question suivante";
@@ -200,15 +215,15 @@ nextBtn.innerText="Question suivante";
     else if(i==21)
     {
         answers.innerHTML=`<div class="questions__answer">
-        <input type="radio" class="questions__butn" value="answers" name="btnanswer" checked>
+        <input type="radio" class="questions__butn" value="answers" name="btnanswer" value="OUI" checked>
         <label for="button"> Oui</label>
     </div>
     <div class="questions__answer">
-        <input type="radio" class="questions__butn" value="answers" name="btnanswer">
+        <input type="radio" class="questions__butn" value="answers" name="btnanswer" value="NON">
         <label for="button"> Non</label>
     </div>
     <div class="questions__answer">
-        <input type="radio" class="questions__butn" value="answers" name="btnanswer">
+        <input type="radio" class="questions__butn" value="answers" name="btnanswer" value="Ne sait pas">
         <label for="button"> Ne sait pas</label>
     </div>`;
     nextBtn.innerText="Question suivante";
@@ -216,15 +231,15 @@ nextBtn.innerText="Question suivante";
     else if(i==22)
     {
         answers.innerHTML=`<div class="questions__answer">
-        <input type="radio" class="questions__butn" value="answers" name="btnanswer" checked>
+        <input type="radio" class="questions__butn" value="answers" name="btnanswer" value="OUI" checked>
         <label for="button"> Oui</label>
     </div>
     <div class="questions__answer">
-        <input type="radio" class="questions__butn" value="answers" name="btnanswer">
+        <input type="radio" class="questions__butn" value="answers" name="btnanswer" value="NON">
         <label for="button"> Non</label>
     </div>
     <div class="questions__answer">
-        <input type="radio" class="questions__butn" value="answers" name="btnanswer">
+        <input type="radio" class="questions__butn" value="answers" name="btnanswer" value="Ne sait pas">
         <label for="button"> Ne sait pas</label>
     </div>`,
     
