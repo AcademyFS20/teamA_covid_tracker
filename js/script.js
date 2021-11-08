@@ -69,7 +69,7 @@ nextBtn.addEventListener("click", function () {
 
 
    
-    const userInput = document.querySelectorAll('[type="radio"]:checked');
+
     // for (e=1; e<userInput.length; e++){
     //     console.log(userInput[e].value);
     //     answersArray = [userInput[e].value]
@@ -122,13 +122,9 @@ nextBtn.addEventListener("click", function () {
     // })
    
 
-    userInput.forEach(element =>{
-        answersArray.push(element.value)
-    
-    })
-    console.log(answersArray)
-   
 
+    
+   
    
     textProgressQ.innerText = `Question ${i + 1}/${maxQuestions}`;
     progressBarFiller.style.width = `${(i / maxQuestions) * 100}%`;
@@ -298,16 +294,13 @@ nextBtn.addEventListener("click", function () {
         <label for="button"> Ne sait pas</label>
     </div>`,
 
-            nextBtn.innerText = "Resultat";
+        nextBtn.innerText = "Resultat";
         nextBtn.value = "submit";
 
         nextBtn.addEventListener('click', () => {
 
-
-
             const element = document.createElement('p');
             element.innerHTML = 'RESULTAT du TEST';
-
             testPage.appendChild(element);
             previousBtn.style.display = "none";
             answers.style.display = "none";
@@ -320,6 +313,26 @@ nextBtn.addEventListener("click", function () {
             bulletOne.classList.remove('active');
             bulletTwo.classList.remove('disabled');
             bulletThree.classList.add('shown');
+
+
+            const userInput = document.querySelectorAll('[type="radio"]:checked');
+            console.log(userInput)
+            userInput.forEach(element =>{
+                answersArray.push(element.value)
+                let [fievre,temperature,toux,courbatures,gorge,diarrhee,fatigue,diffucltes,gene,sentez,age,hypertension,diabetique,cancer,respiratoire,renale,foie,enceinte,defenses,traitement] = answersArray
+                // && toux === 'NON'  && courbatures === "NON" && gorge == "NON" && diarrhee === "NON"
+                if(fievre === "non"){
+                    let response = "votre situation ne releve probalblemen pas du covid-19"
+                    console.log(response)
+                   
+                }
+              
+            })
+        
+        
+
+
+           
 
         })
 
@@ -498,25 +511,7 @@ previousBtn.addEventListener("click", function () {
         nextBtn.innerText = "Resultat";
         nextBtn.value = "submit";
 
-        nextBtn.addEventListener('click', () => {
 
-
-
-            const element = document.createElement('p');
-            element.innerHTML = 'RESULTAT du TEST';
-
-            testPage.appendChild(element);
-            question.style.display = "none";
-            previousBtn.style.display = "none";
-            const divquest = document.querySelector('.progresspercent__question');
-            divquest.style.display = "none";
-            // bulletOne.classList.remove('active');
-            // bulletTwo.classList.remove('disabled');
-            // bulletThree.classList.add('shown');
-
-
-
-        })
     }
 
     answers.classList.add(`.questions__answers'${i}`);
