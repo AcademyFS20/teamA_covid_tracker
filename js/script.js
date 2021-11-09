@@ -123,7 +123,54 @@ nextBtn.addEventListener("click", function () {
    
 
 
-    
+    const userInput = document.querySelectorAll('[type="radio"]:checked');
+    console.log(userInput)
+    userInput.forEach(element =>{
+        answersArray.push(element.value)
+        let [fievre,temperature,toux,courbatures,gorge,diarrhee,fatigue,diffucltes,gene,sentez,age,hypertension,diabetique,cancer,respiratoire,renale,foie,enceinte,defenses,traitement] = answersArray
+        // console.log(fievre);
+        // console.log(temperature);
+        // console.log(toux);
+        // console.log(courbatures);
+        // console.log(gorge);
+        // console.log(diarrhee);
+        // console.log(fatigue);
+        console.log(diffucltes);
+        // console.log(gene);
+        // console.log(sentez);
+        // console.log(age);
+        // console.log(hypertension);
+        // console.log(diabetique);
+        // console.log(cancer);
+        // console.log(respiratoire);
+        // console.log(renale);
+        // console.log(foie);
+        // console.log(enceinte);
+        // console.log(defenses);
+        // console.log(traitement);
+
+        
+        if(fievre === "non"&& toux === 'NON'  && courbatures === "NON" && gorge === "NON" && diarrhee === "NON"){
+            let response = "votre situation ne releve probalblemen pas du covid-19"
+            console.log(response);
+
+                             
+        }
+        else if (fievre === "oui" && toux === "OUI" && courbatures === "OUI" && gorge === "OUI" && diarrhee === "OUI"){
+            let response = "Restez chez vous au maximum en attendant que les symptomes disparaissent."
+            console.log(response);
+        }
+
+        else if (fievre === "oui" || toux === "OUI" || courbatures === "OUI" || gorge === "OUI" || diarrhee === "OUI" ){
+            if ((temperature === "<=35,5°C" || temperature === "<=37,8°C" || temperature === "Non renseignée") && (fatigue === "NON") && (diffucltes === "NON")  ){
+                response ="votre situation ne releve probalblemen pas du covid-19, consultez votre medcin au moindre doute";
+                console.log(response);
+                
+
+            }
+        }
+      
+    });
    
    
     textProgressQ.innerText = `Question ${i + 1}/${maxQuestions}`;
@@ -299,6 +346,10 @@ nextBtn.addEventListener("click", function () {
 
         nextBtn.addEventListener('click', () => {
 
+
+
+          
+
             const element = document.createElement('p');
             element.innerHTML = 'RESULTAT du TEST';
             testPage.appendChild(element);
@@ -315,19 +366,7 @@ nextBtn.addEventListener("click", function () {
             bulletThree.classList.add('shown');
 
 
-            const userInput = document.querySelectorAll('[type="radio"]:checked');
-            console.log(userInput)
-            userInput.forEach(element =>{
-                answersArray.push(element.value)
-                let [fievre,temperature,toux,courbatures,gorge,diarrhee,fatigue,diffucltes,gene,sentez,age,hypertension,diabetique,cancer,respiratoire,renale,foie,enceinte,defenses,traitement] = answersArray
-                // && toux === 'NON'  && courbatures === "NON" && gorge == "NON" && diarrhee === "NON"
-                if(fievre === "non"){
-                    let response = "votre situation ne releve probalblemen pas du covid-19"
-                    console.log(response)
-                   
-                }
-              
-            })
+      
         
         
 
