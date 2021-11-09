@@ -15,23 +15,23 @@ const bulletTwo = document.getElementById('two');
 const bulletThree = document.getElementById('three');
 
 
-const questionList = ["", "Pensez-vous avoir eu de la fièvre ces dernièrs jours (frissons, sueurs) ?", 
-"Si oui : quelle est votre température ?", 
-"Avez-vous une toux ou une augmentation de votre toux habituelle ces derniers jours ?",
- "Avez-vous des douleurs musculaires ou des courbatures inhabituelles ces derniers jours ?", 
- "Avez-vous un mal de gorge apparu ces derniers jours ?", 
- "Avez-vous de la diarrhée ces dernières 24 heures (au moins 3 selles molles) ?", 
- "Avez-vous une fatigue inhabituelle ces derniers jours ?", 
- "Avez-vous des difficultés importantes pour vous alimenter ou boire depuis plus de 24h ?", 
- "Avez-vous vu apparaître une gêne respiratoire ou une augmentation de votre gêne respiratoire habituelle ?", 
- "Comment sentez-vous ?", "Avez-vous d’autres symptômes ?",
-  "Quel est votre âge ?", "Quel est votre poids ? Quelle est votre taille ?", 
-  "Avez-vous de l’hypertension artérielle ? Ou avez-vous une maladie cardiaque ou vasculaire ? Ou prenez vous un traitement à visée cardiologique ?", 
-  "Êtes-vous diabétique ?", "Avez-vous ou avez-vous eu un cancer ?",
-   "Avez-vous une maladie respiratoire ? Ou êtes-vous suivi par un pneumologue ?", 
-  "Avez-vous une insuffisance rénale chronique dialysée ?", "Avez-vous une maladie chronique du foie ?", 
-  "Êtes-vous enceinte ?", "Avez-vous une maladie connue pour diminuer vos défenses immunitaires ?", 
-  "Prenez-vous un traitement immunosuppresseur ? C’est un traitement qui diminue vos défenses contre les infections. Voici quelques exemples : corticoïdes, méthotrexate, ciclosporine, tacrolimus, azathioprine, cyclophosphamide (liste non exhaustive)."];
+const questionList = ["", "Pensez-vous avoir eu de la fièvre ces dernièrs jours (frissons, sueurs) ?",
+    "Si oui : quelle est votre température ?",
+    "Avez-vous une toux ou une augmentation de votre toux habituelle ces derniers jours ?",
+    "Avez-vous des douleurs musculaires ou des courbatures inhabituelles ces derniers jours ?",
+    "Avez-vous un mal de gorge apparu ces derniers jours ?",
+    "Avez-vous de la diarrhée ces dernières 24 heures (au moins 3 selles molles) ?",
+    "Avez-vous une fatigue inhabituelle ces derniers jours ?",
+    "Avez-vous des difficultés importantes pour vous alimenter ou boire depuis plus de 24h ?",
+    "Avez-vous vu apparaître une gêne respiratoire ou une augmentation de votre gêne respiratoire habituelle ?",
+    "Comment sentez-vous ?", "Avez-vous d’autres symptômes ?",
+    "Quel est votre âge ?", "Quel est votre poids ? Quelle est votre taille ?",
+    "Avez-vous de l’hypertension artérielle ? Ou avez-vous une maladie cardiaque ou vasculaire ? Ou prenez vous un traitement à visée cardiologique ?",
+    "Êtes-vous diabétique ?", "Avez-vous ou avez-vous eu un cancer ?",
+    "Avez-vous une maladie respiratoire ? Ou êtes-vous suivi par un pneumologue ?",
+    "Avez-vous une insuffisance rénale chronique dialysée ?", "Avez-vous une maladie chronique du foie ?",
+    "Êtes-vous enceinte ?", "Avez-vous une maladie connue pour diminuer vos défenses immunitaires ?",
+    "Prenez-vous un traitement immunosuppresseur ? C’est un traitement qui diminue vos défenses contre les infections. Voici quelques exemples : corticoïdes, méthotrexate, ciclosporine, tacrolimus, azathioprine, cyclophosphamide (liste non exhaustive)."];
 
 
 
@@ -68,17 +68,17 @@ textProgressQ.innerText = `Question ${i}/${maxQuestions}`;
 nextBtn.addEventListener("click", function () {
 
 
-   
+
 
     // for (e=1; e<userInput.length; e++){
     //     console.log(userInput[e].value);
     //     answersArray = [userInput[e].value]
     //     answersArray = [userInput[e].value,userInput[e].value,userInput[e].value,userInput[e].value,userInput[e].value,userInput[e].value,userInput[e].value,userInput[e].value,userInput[e].value,userInput[e].value,userInput[e].value,userInput[e].value,userInput[e].value,userInput[e].value,userInput[e].value,userInput[e].value,userInput[e].value,userInput[e].value,userInput[e].value,userInput[e].value,userInput[e].value,userInput[e].value]
 
-        
+
     // }
 
-    
+
     // const questionsListagain = [
 
     //     {
@@ -120,14 +120,14 @@ nextBtn.addEventListener("click", function () {
     //         console.log('ne rentre pas chez toi');
     //      }
     // })
-   
+
 
 
     const userInput = document.querySelectorAll('[type="radio"]:checked');
     console.log(userInput)
-    userInput.forEach(element =>{
+    userInput.forEach(element => {
         answersArray.push(element.value)
-        let [fievre,temperature,toux,courbatures,gorge,diarrhee,fatigue,diffucltes,gene,sentez,age,hypertension,diabetique,cancer,respiratoire,renale,foie,enceinte,defenses,traitement] = answersArray
+        let [fievre, temperature, toux, courbatures, gorge, diarrhee, fatigue, diffucltes, gene, sentez, age, hypertension, diabetique, cancer, respiratoire, renale, foie, enceinte, defenses, traitement] = answersArray
         // console.log(fievre);
         // console.log(temperature);
         // console.log(toux);
@@ -149,30 +149,33 @@ nextBtn.addEventListener("click", function () {
         // console.log(defenses);
         // console.log(traitement);
 
-        
-        if(fievre === "non"&& toux === 'NON'  && courbatures === "NON" && gorge === "NON" && diarrhee === "NON"){
+
+        if (fievre === "non" && toux === 'NON' && courbatures === "NON" && gorge === "NON" && diarrhee === "NON") {
             let response = "votre situation ne releve probalblemen pas du covid-19"
             console.log(response);
 
-                             
+
         }
-        else if (fievre === "oui" && toux === "OUI" && courbatures === "OUI" && gorge === "OUI" && diarrhee === "OUI"){
+        else if (fievre === "oui" && toux === "OUI" && courbatures === "OUI" && gorge === "OUI" && diarrhee === "OUI") {
             let response = "Restez chez vous au maximum en attendant que les symptomes disparaissent."
             console.log(response);
         }
 
-        else if (fievre === "oui" || toux === "OUI" || courbatures === "OUI" || gorge === "OUI" || diarrhee === "OUI" ){
-            if ((temperature === "<=35,5°C" || temperature === "<=37,8°C" || temperature === "Non renseignée") && (fatigue === "NON") && (diffucltes === "NON")  ){
-                response ="votre situation ne releve probalblemen pas du covid-19, consultez votre medcin au moindre doute";
+        else if (fievre === "oui" || toux === "OUI" || courbatures === "OUI" || gorge === "OUI" || diarrhee === "OUI") {
+            if ((temperature === "<=35,5°C" || temperature === "<=37,8°C" || temperature === "Non renseignée") && fatigue === "NON" && diffucltes === "NON" && gene === "NON" && (sentez === "Bien" || sentez === "Assez bien")) {
+                response = "votre situation ne relève probalblemen pas du covid-19, consultez votre medcin au moindre doute";
                 console.log(response);
-                
-
+            }
+            else if ((temperature === ">=39°C" || fatigue === "OUI" || diffucltes === "OUI" || gene === "OUI" || (sentez === "Très mal" || sentez === "Mal"))
+             || (age === "= 70 ans" || hypertension === "OUI" || diabetique === "OUI" || cancer === "OUI" || respiratoire === "OUI" || renale === "OUI" || foie === "OUI" || enceinte === "OUI" || defenses === "OUI" || traitement === "OUI" )){
+                response = "votre situation ne relève probalblement pas du covid-19. Un avis médical est recomondée. Au moindre doute appeler le 141";
+                console.log(response);
             }
         }
-      
+
     });
-   
-   
+
+
     textProgressQ.innerText = `Question ${i + 1}/${maxQuestions}`;
     progressBarFiller.style.width = `${(i / maxQuestions) * 100}%`;
 
@@ -341,14 +344,14 @@ nextBtn.addEventListener("click", function () {
         <label for="button"> Ne sait pas</label>
     </div>`,
 
-        nextBtn.innerText = "Resultat";
+            nextBtn.innerText = "Resultat";
         nextBtn.value = "submit";
 
         nextBtn.addEventListener('click', () => {
 
 
 
-          
+
 
             const element = document.createElement('p');
             element.innerHTML = 'RESULTAT du TEST';
@@ -366,12 +369,12 @@ nextBtn.addEventListener("click", function () {
             bulletThree.classList.add('shown');
 
 
-      
-        
-        
 
 
-           
+
+
+
+
 
         })
 
