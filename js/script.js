@@ -151,14 +151,14 @@ nextBtn.addEventListener("click", function () {
 
 
         if (fievre === "non" && toux === 'NON' && courbatures === "NON" && gorge === "NON" && diarrhee === "NON") {
-            let response = "votre situation ne releve probalblemen pas du covid-19"
-            console.log(response);
+            response = "votre situation ne releve probalblemen pas du covid-19"
+            // console.log(response);
 
 
         }
         else if (fievre === "oui" && toux === "OUI" && courbatures === "OUI" && gorge === "OUI" && diarrhee === "OUI") {
-            let response = "Restez chez vous au maximum en attendant que les symptomes disparaissent."
-            console.log(response);
+             response = "Restez chez vous au maximum en attendant que les symptomes disparaissent."
+            // console.log(response);
         }
 
         else if (fievre === "oui" || toux === "OUI" || courbatures === "OUI" || gorge === "OUI" || diarrhee === "OUI") {
@@ -365,8 +365,12 @@ nextBtn.addEventListener("click", function () {
 
 
             const element = document.createElement('p');
-            element.innerHTML = 'RESULTAT du TEST';
+            element.innerHTML = 'RESULTAT du TEST'  ;
             testPage.appendChild(element);
+            const ele = document.createElement('h2');
+            ele.textContent = `${response}`;
+            testPage.appendChild(ele);
+            console.log(response);
             previousBtn.style.display = "none";
             answers.style.display = "none";
             question.style.display = "none";
